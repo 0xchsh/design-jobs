@@ -167,6 +167,14 @@ const EXCLUDE_PATTERNS = [
   /\brecruiter/i,
   /\bcreative producer/i,
   /\bproduction design operations/i,
+  /\basic design/i,
+  /\belectrical design/i,
+  /\bmanufacturing design/i,
+  /\bcad designer/i,
+  /\binstructional.*designer/i,
+  /\bmultimedia designer/i,
+  /\bdesign validation/i,
+  /\bdesign verification/i,
 ];
 
 function isDesignRole(title: string, _department: string): boolean {

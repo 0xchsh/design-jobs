@@ -38,6 +38,40 @@ export const jobs: Job[] = [
     department: "Engineering & Design - Product",
   },
 
+  // ── Applied Labs ───────────────────────────────────────────
+  {
+    title: "Design Engineer",
+    company: "Applied Labs",
+    location: "New York",
+    url: "https://jobs.ashbyhq.com/appliedlabs/efc76cb7-e7a4-4e9e-a381-b15566496357",
+    department: "Engineering",
+  },
+
+  // ── Augment Code ───────────────────────────────────────────
+  {
+    title: "Product Designer",
+    company: "Augment Code",
+    location: "Palo Alto, California, United States",
+    url: "https://job-boards.greenhouse.io/augmentcomputing/jobs/5134545008",
+    department: "Product",
+  },
+
+  // ── Benchling ──────────────────────────────────────────────
+  {
+    title: "Product Designer, AI",
+    company: "Benchling",
+    location: "San Francisco, CA",
+    url: "https://jobs.ashbyhq.com/benchling/a0341c2a-3cbe-42ee-a86f-fac8b84bf0e1",
+    department: "Product & Design",
+  },
+  {
+    title: "Product Designer, InVivo",
+    company: "Benchling",
+    location: "Belfast, Northern Ireland",
+    url: "https://jobs.ashbyhq.com/benchling/35f905b5-641a-47b8-9ac1-057f02eed968",
+    department: "Product & Design",
+  },
+
   // ── Character.ai ───────────────────────────────────────────
   {
     title: "Product Designer",
@@ -45,6 +79,45 @@ export const jobs: Job[] = [
     location: "Redwood City, CA",
     url: "https://jobs.ashbyhq.com/character/344e6351-d8c1-4bfa-8672-f9f2faf5a1c6",
     department: "Product",
+  },
+
+  // ── Coframe ────────────────────────────────────────────────
+  {
+    title: "Senior Product Designer",
+    company: "Coframe",
+    location: "SF Bay Area",
+    url: "https://jobs.ashbyhq.com/coframe/29a944ba-7cae-429e-84e3-32f047d21c4a",
+    department: "Product",
+  },
+
+  // ── ComfyUI ────────────────────────────────────────────────
+  {
+    title: "Design Engineer",
+    company: "ComfyUI",
+    location: "San Francisco",
+    url: "https://jobs.ashbyhq.com/comfy-org/abc787b9-ad85-421c-8218-debd23bea096",
+    department: "Design",
+  },
+  {
+    title: "Freelance Motion Designer",
+    company: "ComfyUI",
+    location: "San Francisco",
+    url: "https://jobs.ashbyhq.com/comfy-org/a7ccc2b4-4d9d-4e04-b39c-28a711995b5b",
+    department: "Design",
+  },
+  {
+    title: "Graphic Designer",
+    company: "ComfyUI",
+    location: "San Francisco",
+    url: "https://jobs.ashbyhq.com/comfy-org/49fa0b07-3fa1-4a3a-b2c6-d2cc684ad63f",
+    department: "Design",
+  },
+  {
+    title: "Senior Product Designer",
+    company: "ComfyUI",
+    location: "San Francisco",
+    url: "https://jobs.ashbyhq.com/comfy-org/b2e864c6-4754-4e04-8f46-1022baa103c3",
+    department: "Design",
   },
 
   // ── Cursor ─────────────────────────────────────────────────
@@ -75,6 +148,29 @@ export const jobs: Job[] = [
     location: "San Francisco | New York",
     url: "https://cursor.com/careers/product-designer",
     department: "Design",
+  },
+
+  // ── Databricks ─────────────────────────────────────────────
+  {
+    title: "Sr. Product Designer",
+    company: "Databricks",
+    location: "San Francisco, California | Seattle, Washington",
+    url: "https://databricks.com/company/careers/open-positions/job?gh_jid=8155422002",
+    department: "Product",
+  },
+  {
+    title: "Sr. Product Designer, AI/BI",
+    company: "Databricks",
+    location: "Seattle, Washington | Mountain View, California; San Francisco, California",
+    url: "https://databricks.com/company/careers/open-positions/job?gh_jid=8428820002",
+    department: "Product",
+  },
+  {
+    title: "Sr. Product Designer, Data Engineering",
+    company: "Databricks",
+    location: "San Francisco, California | Seattle, Washington",
+    url: "https://databricks.com/company/careers/open-positions/job?gh_jid=8373533002",
+    department: "Product",
   },
 
   // ── ElevenLabs ─────────────────────────────────────────────
@@ -162,6 +258,15 @@ export const jobs: Job[] = [
     company: "Figma",
     location: "San Francisco, CA • New York, NY • United States",
     url: "https://boards.greenhouse.io/figma/jobs/5711595004?gh_jid=5711595004",
+    department: "Design",
+  },
+
+  // ── FlutterFlow ────────────────────────────────────────────
+  {
+    title: "Sr. Product Designer",
+    company: "FlutterFlow",
+    location: "Remote - US",
+    url: "https://jobs.ashbyhq.com/FlutterFlow/224be149-19f8-469c-9767-f2f263f0ae5c",
     department: "Design",
   },
 
@@ -339,6 +444,15 @@ export const jobs: Job[] = [
     department: "Design",
   },
 
+  // ── Lindy ──────────────────────────────────────────────────
+  {
+    title: "Senior Product Designer",
+    company: "Lindy",
+    location: "San Francisco",
+    url: "https://jobs.ashbyhq.com/lindy/4258e967-8a1a-48b0-84d7-c9764521201a",
+    department: "Product",
+  },
+
   // ── Linear ─────────────────────────────────────────────────
   {
     title: "Designer, Web & Brand",
@@ -355,6 +469,59 @@ export const jobs: Job[] = [
     department: "Product",
   },
 
+  // ── Lovable ────────────────────────────────────────────────
+  {
+    title: "Brand Designer",
+    company: "Lovable",
+    location: "Stockholm",
+    url: "https://jobs.ashbyhq.com/lovable/f75470fa-1bbd-4bb9-95ed-614ff94ccb33",
+    department: "Design",
+  },
+  {
+    title: "Design Engineer",
+    company: "Lovable",
+    location: "Stockholm",
+    url: "https://jobs.ashbyhq.com/lovable/49281e88-9484-4371-84bb-458e50eb517f",
+    department: "Design",
+  },
+  {
+    title: "Design Engineer (Web & Brand)",
+    company: "Lovable",
+    location: "Stockholm",
+    url: "https://jobs.ashbyhq.com/lovable/e5b0769c-168f-4a7b-a749-7ba8ea5e0c9e",
+    department: "Design",
+  },
+  {
+    title: "Motion Designer",
+    company: "Lovable",
+    location: "Stockholm",
+    url: "https://jobs.ashbyhq.com/lovable/3de412b5-0260-40e9-af4e-18b2a161fef6",
+    department: "Design",
+  },
+  {
+    title: "Product Designer",
+    company: "Lovable",
+    location: "Stockholm",
+    url: "https://jobs.ashbyhq.com/lovable/cf78be5e-41ca-478a-b480-0d0839c24543",
+    department: "Design",
+  },
+  {
+    title: "UX Researcher",
+    company: "Lovable",
+    location: "Stockholm",
+    url: "https://jobs.ashbyhq.com/lovable/c394b8d2-bed1-442f-bda7-ae773840d53d",
+    department: "Product",
+  },
+
+  // ── Mercor ─────────────────────────────────────────────────
+  {
+    title: "Senior Product Designer",
+    company: "Mercor",
+    location: "San Francisco",
+    url: "https://jobs.ashbyhq.com/mercor/fa165009-f687-48da-a141-ca49593336e5",
+    department: "Engineering",
+  },
+
   // ── Modal ──────────────────────────────────────────────────
   {
     title: "Founding Brand Designer",
@@ -369,6 +536,22 @@ export const jobs: Job[] = [
     location: "New York",
     url: "https://jobs.ashbyhq.com/modal/c7fb59d8-5dfd-4e0c-a565-f94219a0c9ee",
     department: "Design",
+  },
+
+  // ── Netic ──────────────────────────────────────────────────
+  {
+    title: "Founding UI/UX Engineer",
+    company: "Netic",
+    location: "San Francisco",
+    url: "https://jobs.ashbyhq.com/netic/97decec6-0eb3-47aa-9d08-c2b61f9d52ca",
+    department: "Engineering, Product, and Design",
+  },
+  {
+    title: "Product Designer",
+    company: "Netic",
+    location: "San Francisco",
+    url: "https://jobs.ashbyhq.com/netic/2b65d752-605f-4ccc-a25e-c7a8b18c191e",
+    department: "Engineering, Product, and Design",
   },
 
   // ── Palantir ───────────────────────────────────────────────
@@ -669,6 +852,43 @@ export const jobs: Job[] = [
     department: "Brand and Creative",
   },
 
+  // ── Synthesia ──────────────────────────────────────────────
+  {
+    title: "Digital Designer (mid-level)",
+    company: "Synthesia",
+    location: "London",
+    url: "https://jobs.ashbyhq.com/synthesia/63aafc8f-47de-47fe-8b2a-f51ed5b4f5e7",
+    department: "Commercial",
+  },
+  {
+    title: "Junior Digital Designer",
+    company: "Synthesia",
+    location: "US Remote",
+    url: "https://jobs.ashbyhq.com/synthesia/6874477a-ae89-4502-bdac-c980fa765891",
+    department: "Commercial",
+  },
+  {
+    title: "Manager of Product Design",
+    company: "Synthesia",
+    location: "London",
+    url: "https://jobs.ashbyhq.com/synthesia/2247ac3e-7fdc-4860-b761-186cbf974001",
+    department: "Product",
+  },
+  {
+    title: "Product Designer (Senior/Principal-level)",
+    company: "Synthesia",
+    location: "London",
+    url: "https://jobs.ashbyhq.com/synthesia/8b8c8ae0-3074-4087-94fa-0002c8894063",
+    department: "Product",
+  },
+  {
+    title: "Senior Experiential Brand Designer",
+    company: "Synthesia",
+    location: "London",
+    url: "https://jobs.ashbyhq.com/synthesia/2bb161ef-7355-474c-a051-dc57322f8225",
+    department: "Marketing",
+  },
+
   // ── Together AI ────────────────────────────────────────────
   {
     title: "Lead Product Designer",
@@ -706,6 +926,59 @@ export const jobs: Job[] = [
     location: "Remote - United States",
     url: "https://job-boards.greenhouse.io/vercel/jobs/5735407004",
     department: "Design",
+  },
+
+  // ── Warp ───────────────────────────────────────────────────
+  {
+    title: "Production Designer (Contract)",
+    company: "Warp",
+    location: "Remote within US and Canada",
+    url: "https://job-boards.greenhouse.io/warp/jobs/5784466004",
+    department: "Growth",
+  },
+  {
+    title: "Senior Brand Designer",
+    company: "Warp",
+    location: "Remote within US and Canada",
+    url: "https://job-boards.greenhouse.io/warp/jobs/5784516004",
+    department: "Growth",
+  },
+
+  // ── Waymo ──────────────────────────────────────────────────
+  {
+    title: "Senior Android Engineer, Depot UX",
+    company: "Waymo",
+    location: "Warsaw, Masovian Voivodeship",
+    url: "https://careers.withwaymo.com/jobs?gh_jid=7456602",
+    department: "CSI (7LV)",
+  },
+  {
+    title: "Senior Industrial Designer",
+    company: "Waymo",
+    location: "Mountain View, CA, USA",
+    url: "https://careers.withwaymo.com/jobs?gh_jid=7442054",
+    department: "Industrial Design (78N)",
+  },
+  {
+    title: "Senior Staff Industrial Designer",
+    company: "Waymo",
+    location: "Mountain View, CA, USA",
+    url: "https://careers.withwaymo.com/jobs?gh_jid=7442326",
+    department: "Industrial Design (78N)",
+  },
+  {
+    title: "Senior UX Engineer, Design Systems & Tooling",
+    company: "Waymo",
+    location: "Mountain View, CA, USA; San Francisco, CA, USA",
+    url: "https://careers.withwaymo.com/jobs?gh_jid=7404570",
+    department: "Product (78L)",
+  },
+  {
+    title: "UX Designer, Design System",
+    company: "Waymo",
+    location: "Mountain View, CA, USA; San Francisco, CA, USA",
+    url: "https://careers.withwaymo.com/jobs?gh_jid=7665361",
+    department: "Product (78L)",
   },
 
   // ── Writer ─────────────────────────────────────────────────
