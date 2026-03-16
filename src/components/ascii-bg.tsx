@@ -8,6 +8,8 @@ const CELL_H = 13;
 const RIPPLE_RADIUS = 180;
 const FADE_SPEED = 0.002;
 const DRIFT_SPEED = 0.08;
+const AUTO_RIPPLE_RADIUS = 200;
+const AUTO_RIPPLE_COUNT = 3;
 
 const RIPPLE_COLORS = [
   [100, 120, 220],
@@ -34,6 +36,15 @@ export function AsciiBg() {
   const cellsRef = useRef<Cell[]>([]);
   const dimsRef = useRef({ cols: 0, rows: 0, width: 0, height: 0 });
   const rafRef = useRef<number>(0);
+  const autoRipplesRef = useRef(
+    Array.from({ length: AUTO_RIPPLE_COUNT }, (_, i) => ({
+      phase: (i / AUTO_RIPPLE_COUNT) * Math.PI * 2,
+      speedX: 0.3 + Math.random() * 0.2,
+      speedY: 0.2 + Math.random() * 0.15,
+      offsetX: Math.random() * Math.PI * 2,
+      offsetY: Math.random() * Math.PI * 2,
+    }))
+  );
 
   const initCells = useCallback((cols: number, rows: number) => {
     const cells: Cell[] = [];
@@ -99,6 +110,12 @@ export function AsciiBg() {
       const mx = mouseRef.current.x;
       const my = mouseRef.current.y;
 
+      // Compute auto-ripple positions
+      const autoRipples = autoRipplesRef.current.map((r) => ({
+        x: (Math.sin(time * 0.005 * r.speedX + r.offsetX) * 0.5 + 0.5) * width,
+        y: (Math.cos(time * 0.005 * r.speedY + r.offsetY) * 0.5 + 0.5) * height,
+      }));
+
       const cells = cellsRef.current;
       for (let i = 0; i < cells.length; i++) {
         const cell = cells[i];
@@ -120,10 +137,28 @@ export function AsciiBg() {
           Math.sin(time * FADE_SPEED + cell.phase) * 0.5 + 0.5;
         cell.opacity = cell.baseOpacity * (0.3 + fadeCycle * 0.7);
 
-        // Ripple on hover
+        // Default: subtle colored animation
+        const color = RIPPLE_COLORS[cell.colorIdx];
+        const baseAlpha = cell.opacity * 1.5;
+
+        // Auto-ripple — ambient glow that drifts across the canvas
+        let autoIntensity = 0;
+        for (let r = 0; r < autoRipples.length; r++) {
+          const adx = cx - autoRipples[r].x;
+          const ady = cy - autoRipples[r].y;
+          const adist = Math.sqrt(adx * adx + ady * ady);
+          if (adist < AUTO_RIPPLE_RADIUS) {
+            const t = 1 - adist / AUTO_RIPPLE_RADIUS;
+            autoIntensity = Math.max(autoIntensity, t * t * 0.45);
+          }
+        }
+
+        // Ripple on hover — accentuates the default animation
         const dx = cx - mx;
         const dy = cy - my;
         const dist = Math.sqrt(dx * dx + dy * dy);
+
+        let alpha = baseAlpha + autoIntensity;
 
         if (dist < RIPPLE_RADIUS) {
           const t = 1 - dist / RIPPLE_RADIUS;
@@ -134,13 +169,11 @@ export function AsciiBg() {
             cell.char = CHARS[Math.floor(Math.random() * CHARS.length)];
           }
 
-          const color = RIPPLE_COLORS[cell.colorIdx];
-          const alpha = Math.min(intensity * 0.9 + 0.1, 0.95);
-          ctx.fillStyle = `rgba(${color[0]}, ${color[1]}, ${color[2]}, ${alpha})`;
-        } else {
-          ctx.fillStyle = `rgba(0, 0, 0, ${cell.opacity})`;
+          alpha = Math.min(alpha + intensity * 0.8, 0.95);
         }
 
+        alpha = Math.min(alpha, 0.95);
+        ctx.fillStyle = `rgba(${color[0]}, ${color[1]}, ${color[2]}, ${alpha})`;
         ctx.fillText(cell.char, cx, cy);
       }
 

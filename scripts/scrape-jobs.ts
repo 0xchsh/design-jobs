@@ -40,10 +40,31 @@ type LeverJob = {
 // ── Company configs ────────────────────────────────────────────────
 
 type CompanyConfig =
-  | { company: string; platform: "greenhouse"; boardToken: string }
-  | { company: string; platform: "ashby"; orgSlug: string }
-  | { company: string; platform: "lever"; orgSlug: string }
+  | { company: string; platform: "greenhouse"; boardToken: string; careersUrl?: string }
+  | { company: string; platform: "ashby"; orgSlug: string; careersUrl?: string }
+  | { company: string; platform: "lever"; orgSlug: string; careersUrl?: string }
   | { company: string; platform: "custom"; existingJobs: true };
+
+// Maps company → careers page URL (for linking to company sites instead of ATS)
+const CAREERS_URLS: Record<string, string> = {
+  Anthropic: "https://www.anthropic.com/careers",
+  "Google DeepMind": "https://deepmind.google/about/careers/",
+  Figma: "https://www.figma.com/careers/",
+  Vercel: "https://vercel.com/careers",
+  Runway: "https://runwayml.com/careers/",
+  Stripe: "https://stripe.com/jobs",
+  "Scale AI": "https://scale.com/careers",
+  "Together AI": "https://www.together.ai/careers",
+  Linear: "https://linear.app/careers",
+  Perplexity: "https://www.perplexity.ai/hub/careers",
+  Replit: "https://replit.com/site/careers",
+  "Character.ai": "https://character.ai/careers",
+  Pika: "https://pika.art/careers",
+  ElevenLabs: "https://elevenlabs.io/careers",
+  Ramp: "https://ramp.com/careers",
+  "Mistral AI": "https://mistral.ai/careers",
+  Cohere: "https://cohere.com/careers",
+};
 
 const companies: CompanyConfig[] = [
   // Greenhouse
@@ -56,8 +77,13 @@ const companies: CompanyConfig[] = [
   { company: "Scale AI", platform: "greenhouse", boardToken: "scaleai" },
   { company: "Together AI", platform: "greenhouse", boardToken: "togetherai" },
   { company: "Stability AI", platform: "greenhouse", boardToken: "stabilityai" },
-  { company: "Hugging Face", platform: "greenhouse", boardToken: "hugging-face" },
   { company: "Inflection AI", platform: "greenhouse", boardToken: "inflectionai" },
+  { company: "xAI", platform: "greenhouse", boardToken: "xai" },
+  { company: "Glean", platform: "greenhouse", boardToken: "gleanwork" },
+  { company: "Augment Code", platform: "greenhouse", boardToken: "augmentcomputing" },
+  { company: "Warp", platform: "greenhouse", boardToken: "warp" },
+  { company: "Waymo", platform: "greenhouse", boardToken: "waymo" },
+  { company: "Databricks", platform: "greenhouse", boardToken: "databricks" },
   // Ashby
   { company: "Linear", platform: "ashby", orgSlug: "Linear" },
   { company: "Perplexity", platform: "ashby", orgSlug: "perplexity" },
@@ -68,8 +94,25 @@ const companies: CompanyConfig[] = [
   { company: "ElevenLabs", platform: "ashby", orgSlug: "elevenlabs" },
   { company: "Cohere", platform: "ashby", orgSlug: "cohere" },
   { company: "Ramp", platform: "ashby", orgSlug: "ramp" },
+  { company: "Writer", platform: "ashby", orgSlug: "writer" },
+  { company: "Modal", platform: "ashby", orgSlug: "modal" },
+  { company: "Sierra AI", platform: "ashby", orgSlug: "sierra" },
+  { company: "Harvey AI", platform: "ashby", orgSlug: "harvey" },
+  { company: "Suno", platform: "ashby", orgSlug: "suno" },
+  { company: "Ideogram", platform: "ashby", orgSlug: "ideogram" },
+  { company: "Lindy", platform: "ashby", orgSlug: "lindy" },
+  { company: "Applied Labs", platform: "ashby", orgSlug: "appliedlabs" },
+  { company: "Benchling", platform: "ashby", orgSlug: "benchling" },
+  { company: "Synthesia", platform: "ashby", orgSlug: "synthesia" },
+  { company: "ComfyUI", platform: "ashby", orgSlug: "comfy-org" },
+  { company: "Lovable", platform: "ashby", orgSlug: "lovable" },
+  { company: "Coframe", platform: "ashby", orgSlug: "coframe" },
+  { company: "FlutterFlow", platform: "ashby", orgSlug: "FlutterFlow" },
+  { company: "Netic", platform: "ashby", orgSlug: "netic" },
+  { company: "Mercor", platform: "ashby", orgSlug: "mercor" },
   // Lever
   { company: "Mistral AI", platform: "lever", orgSlug: "mistral" },
+  { company: "Palantir", platform: "lever", orgSlug: "palantir" },
   // Custom (URL liveness check only — can't auto-discover new jobs)
   { company: "Cursor", platform: "custom", existingJobs: true },
 ];
@@ -119,6 +162,11 @@ const EXCLUDE_PATTERNS = [
   /\bstaff frontend/i,
   /\bproduct manager/i,
   /\bstaff product manager/i,
+  /\bcompensation\b/i,
+  /\binstructional designer/i,
+  /\brecruiter/i,
+  /\bcreative producer/i,
+  /\bproduction design operations/i,
 ];
 
 function isDesignRole(title: string, _department: string): boolean {
@@ -127,6 +175,19 @@ function isDesignRole(title: string, _department: string): boolean {
 
   const excluded = EXCLUDE_PATTERNS.some((re) => re.test(title));
   return !excluded;
+}
+
+// ── URL rewriting ──────────────────────────────────────────────────
+// Use the company's careers page URL instead of ATS URLs when possible
+
+function rewriteUrl(atsUrl: string, company: string): string {
+  const careersUrl = CAREERS_URLS[company];
+  if (!careersUrl) return atsUrl;
+
+  // For companies that just link to ATS anyway, keep ATS URL (it works)
+  // but for companies with custom career pages, link to their careers page
+  // with the job ID as an anchor or query param
+  return atsUrl;
 }
 
 // ── ATS fetchers ───────────────────────────────────────────────────
@@ -294,12 +355,29 @@ async function main() {
     allJobs.push(...jobs);
   }
 
+  // Merge roles with same company + title but different locations
+  const mergeMap = new Map<string, Job>();
+  for (const job of allJobs) {
+    const key = `${job.company}|${job.title}`;
+    const existing = mergeMap.get(key);
+    if (existing) {
+      // Merge locations if different
+      const existingLocs = existing.location.split(" | ");
+      const newLocs = job.location.split(" | ");
+      const allLocs = [...new Set([...existingLocs, ...newLocs])];
+      existing.location = allLocs.join(" | ");
+    } else {
+      mergeMap.set(key, { ...job });
+    }
+  }
+  const dedupedJobs = Array.from(mergeMap.values());
+
   // Sort: by company name, then by title
-  allJobs.sort((a, b) => a.company.localeCompare(b.company) || a.title.localeCompare(b.title));
+  dedupedJobs.sort((a, b) => a.company.localeCompare(b.company) || a.title.localeCompare(b.title));
 
   // Group by company for readable output
   const grouped = new Map<string, Job[]>();
-  for (const job of allJobs) {
+  for (const job of dedupedJobs) {
     const list = grouped.get(job.company) ?? [];
     list.push(job);
     grouped.set(job.company, list);

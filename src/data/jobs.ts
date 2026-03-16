@@ -165,6 +165,36 @@ export const jobs: Job[] = [
     department: "Design",
   },
 
+  // ── Glean ──────────────────────────────────────────────────
+  {
+    title: "Product Design Lead, AI Products",
+    company: "Glean",
+    location: "San Francisco Bay Area",
+    url: "https://job-boards.greenhouse.io/gleanwork/jobs/4600865005",
+    department: "Design",
+  },
+  {
+    title: "Product Designer",
+    company: "Glean",
+    location: "Bangalore, India",
+    url: "https://job-boards.greenhouse.io/gleanwork/jobs/4389568005",
+    department: "Design",
+  },
+  {
+    title: "Product Designer, AI Products",
+    company: "Glean",
+    location: "San Francisco Bay Area",
+    url: "https://job-boards.greenhouse.io/gleanwork/jobs/4577381005",
+    department: "Design",
+  },
+  {
+    title: "Website Designer",
+    company: "Glean",
+    location: "Bangalore",
+    url: "https://job-boards.greenhouse.io/gleanwork/jobs/4657292005",
+    department: "Marketing",
+  },
+
   // ── Google DeepMind ────────────────────────────────────────
   {
     title: "Senior AI Product Designer, Generative Media, Gemini App",
@@ -251,19 +281,70 @@ export const jobs: Job[] = [
     department: "Inception ",
   },
 
+  // ── Harvey AI ──────────────────────────────────────────────
+  {
+    title: "Head of Design",
+    company: "Harvey AI",
+    location: "San Francisco | New York",
+    url: "https://jobs.ashbyhq.com/harvey/2d423ab8-c6a8-4719-ba17-72c7eee27455",
+    department: "Design",
+  },
+  {
+    title: "Head of UX Research",
+    company: "Harvey AI",
+    location: "San Francisco | New York",
+    url: "https://jobs.ashbyhq.com/harvey/95c23478-9be3-4974-9165-620d0f40042a",
+    department: "Design",
+  },
+  {
+    title: "Senior Product Designer",
+    company: "Harvey AI",
+    location: "San Francisco | New York",
+    url: "https://jobs.ashbyhq.com/harvey/c7e0635d-0b26-4f94-a6f7-023d03a3b4b2",
+    department: "Design",
+  },
+  {
+    title: "Senior Staff Product Designer",
+    company: "Harvey AI",
+    location: "San Francisco | New York",
+    url: "https://jobs.ashbyhq.com/harvey/b6680e08-3650-469c-9102-3e2206d8583b",
+    department: "Design",
+  },
+  {
+    title: "Staff Design Systems Designer",
+    company: "Harvey AI",
+    location: "San Francisco | New York",
+    url: "https://jobs.ashbyhq.com/harvey/aede4098-91f4-44f5-9d53-27c15cb2bae7",
+    department: "Design",
+  },
+  {
+    title: "Staff Product Designer",
+    company: "Harvey AI",
+    location: "San Francisco | New York",
+    url: "https://jobs.ashbyhq.com/harvey/24616c39-e293-4bcc-a3dd-e6f33a71c8ee",
+    department: "Design",
+  },
+  {
+    title: "Staff Product Motion Designer",
+    company: "Harvey AI",
+    location: "San Francisco | New York",
+    url: "https://jobs.ashbyhq.com/harvey/a1c898da-ef90-4fa7-965c-6ba170631307",
+    department: "Design",
+  },
+  {
+    title: "Staff UX Researcher",
+    company: "Harvey AI",
+    location: "San Francisco | New York",
+    url: "https://jobs.ashbyhq.com/harvey/7c9ed2b1-844f-4193-aa42-55024b3301ef",
+    department: "Design",
+  },
+
   // ── Linear ─────────────────────────────────────────────────
   {
     title: "Designer, Web & Brand",
     company: "Linear",
-    location: "Europe",
+    location: "Europe | North America",
     url: "https://jobs.ashbyhq.com/Linear/4f10c2ca-d19a-42b5-9e1f-d1794c43dd89",
-    department: "GTM",
-  },
-  {
-    title: "Designer, Web & Brand",
-    company: "Linear",
-    location: "North America",
-    url: "https://jobs.ashbyhq.com/Linear/4dc6be78-ccf0-45c8-bd98-a061a9e2ffe4",
     department: "GTM",
   },
   {
@@ -272,6 +353,73 @@ export const jobs: Job[] = [
     location: "North America",
     url: "https://jobs.ashbyhq.com/Linear/a264869e-f058-487c-ab7f-9b77dffa427c",
     department: "Product",
+  },
+
+  // ── Modal ──────────────────────────────────────────────────
+  {
+    title: "Founding Brand Designer",
+    company: "Modal",
+    location: "New York",
+    url: "https://jobs.ashbyhq.com/modal/23311dfd-2a80-40dc-a41c-1ff7202e15a2",
+    department: "Design",
+  },
+  {
+    title: "Member of Design Staff (Product)",
+    company: "Modal",
+    location: "New York",
+    url: "https://jobs.ashbyhq.com/modal/c7fb59d8-5dfd-4e0c-a565-f94219a0c9ee",
+    department: "Design",
+  },
+
+  // ── Palantir ───────────────────────────────────────────────
+  {
+    title: "Product Designer",
+    company: "Palantir",
+    location: "London, United Kingdom",
+    url: "https://jobs.lever.co/palantir/2d8b7eaa-5c08-44ef-a0f0-5a96cee2794d",
+    department: "Design",
+  },
+  {
+    title: "Product Designer - US Government",
+    company: "Palantir",
+    location: "New York, NY | Washington, D.C.",
+    url: "https://jobs.lever.co/palantir/c2d11af1-5b84-4be0-92ac-36113fb8f2b5",
+    department: "Design",
+  },
+  {
+    title: "Product Designer, Internship - US Government",
+    company: "Palantir",
+    location: "New York, NY | Washington, D.C.",
+    url: "https://jobs.lever.co/palantir/8f7bbffa-92aa-4d25-9586-943b3322a27d",
+    department: "Design",
+  },
+  {
+    title: "Product Designer, New Grad",
+    company: "Palantir",
+    location: "London, United Kingdom",
+    url: "https://jobs.lever.co/palantir/76161763-bafa-4ebb-a2ce-2a25e315b7d7",
+    department: "Design",
+  },
+  {
+    title: "Product Designer, New Grad - Developer Experience",
+    company: "Palantir",
+    location: "New York, NY",
+    url: "https://jobs.lever.co/palantir/02fe0b60-6fc4-46dd-b0e3-e0d3da3aaa4d",
+    department: "Design",
+  },
+  {
+    title: "Product Designer, New Grad - US Government",
+    company: "Palantir",
+    location: "Washington, D.C. | New York, NY",
+    url: "https://jobs.lever.co/palantir/25378ba0-db78-4c70-8174-a05ce514fc65",
+    department: "Design",
+  },
+  {
+    title: "Visual Designer - Defense",
+    company: "Palantir",
+    location: "Washington, D.C. | New York, NY",
+    url: "https://jobs.lever.co/palantir/41523738-df52-450b-8e12-93b1470a5eaa",
+    department: "Design",
   },
 
   // ── Pika ───────────────────────────────────────────────────
@@ -375,6 +523,43 @@ export const jobs: Job[] = [
     department: "Marketing",
   },
 
+  // ── Sierra AI ──────────────────────────────────────────────
+  {
+    title: "Agent Experience Designer, Voice (Multilingual)",
+    company: "Sierra AI",
+    location: "San Francisco, CA",
+    url: "https://jobs.ashbyhq.com/sierra/1a0e307f-7f02-4971-820c-a244ad909617",
+    department: "Product Design",
+  },
+  {
+    title: "Brand Designer (Contract)",
+    company: "Sierra AI",
+    location: "San Francisco, CA",
+    url: "https://jobs.ashbyhq.com/sierra/a5402a9c-d0ea-4e60-a1bc-68574d54950f",
+    department: "Marketing & Communications",
+  },
+  {
+    title: "Presentation Designer",
+    company: "Sierra AI",
+    location: "San Francisco, CA",
+    url: "https://jobs.ashbyhq.com/sierra/fd955efb-b782-4be3-ae81-30b5d75d8a3d",
+    department: "Marketing & Communications",
+  },
+  {
+    title: "Product Designer",
+    company: "Sierra AI",
+    location: "San Francisco, CA",
+    url: "https://jobs.ashbyhq.com/sierra/ba780c1d-ebd7-45b8-8c99-12666af5bfa3",
+    department: "Product Design",
+  },
+  {
+    title: "Web Designer",
+    company: "Sierra AI",
+    location: "San Francisco, CA",
+    url: "https://jobs.ashbyhq.com/sierra/c4f0dfdb-fe96-48da-82b4-656409eda52a",
+    department: "Marketing & Communications",
+  },
+
   // ── Stripe ─────────────────────────────────────────────────
   {
     title: "Brand Designer, Art Direction",
@@ -447,13 +632,6 @@ export const jobs: Job[] = [
     department: "8811 Product Design",
   },
   {
-    title: "Production Design Operations Associate",
-    company: "Stripe",
-    location: "Bengaluru",
-    url: "https://stripe.com/jobs/search?gh_jid=7431303",
-    department: "4135 SDC - Marketing",
-  },
-  {
     title: "Senior Staff Product Designer, Agentic Commerce",
     company: "Stripe",
     location: "SF, Seattle, New York, Remote in the US",
@@ -480,6 +658,15 @@ export const jobs: Job[] = [
     location: "US, Canada",
     url: "https://stripe.com/jobs/search?gh_jid=7594754",
     department: "8812 UX Research",
+  },
+
+  // ── Suno ───────────────────────────────────────────────────
+  {
+    title: "Senior Graphic Designer (Contract)",
+    company: "Suno",
+    location: "NYC",
+    url: "https://jobs.ashbyhq.com/suno/4ff9d293-e982-441a-9ed2-703a92357375",
+    department: "Brand and Creative",
   },
 
   // ── Together AI ────────────────────────────────────────────
@@ -519,6 +706,59 @@ export const jobs: Job[] = [
     location: "Remote - United States",
     url: "https://job-boards.greenhouse.io/vercel/jobs/5735407004",
     department: "Design",
+  },
+
+  // ── Writer ─────────────────────────────────────────────────
+  {
+    title: "Lead learning experience designer, enterprise AI",
+    company: "Writer",
+    location: "San Francisco, CA",
+    url: "https://jobs.ashbyhq.com/writer/e069edc4-6822-407f-ba19-0752bc6877fb",
+    department: "Delivery & customer success",
+  },
+  {
+    title: "Product designer",
+    company: "Writer",
+    location: "San Francisco, CA",
+    url: "https://jobs.ashbyhq.com/writer/19e8f173-5af9-4ddf-9b72-74cea606bd8d",
+    department: "Engineering, product & design",
+  },
+  {
+    title: "Senior brand designer",
+    company: "Writer",
+    location: "San Francisco, CA",
+    url: "https://jobs.ashbyhq.com/writer/f85f741d-dfee-401d-b4b0-20c93c95e4c2",
+    department: "Marketing",
+  },
+
+  // ── xAI ────────────────────────────────────────────────────
+  {
+    title: "Exceptional Designer",
+    company: "xAI",
+    location: "Palo Alto, CA",
+    url: "https://job-boards.greenhouse.io/xai/jobs/5041977007",
+    department: "Design",
+  },
+  {
+    title: "Interior Designer - Workplace Design",
+    company: "xAI",
+    location: "New York, NY",
+    url: "https://job-boards.greenhouse.io/xai/jobs/5055247007",
+    department: "Data Center",
+  },
+  {
+    title: "UX Designer - Growth/Monetization",
+    company: "xAI",
+    location: "New York, NY",
+    url: "https://job-boards.greenhouse.io/xai/jobs/5055630007",
+    department: "Marketing",
+  },
+  {
+    title: "Web Design Tutor",
+    company: "xAI",
+    location: "Palo Alto, CA; Remote",
+    url: "https://job-boards.greenhouse.io/xai/jobs/4879789007",
+    department: "Post-Training",
   },
 
 ];

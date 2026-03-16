@@ -31,6 +31,30 @@ const domainMap: Record<string, string> = {
   ElevenLabs: "elevenlabs.io",
   Cohere: "cohere.com",
   Ramp: "ramp.com",
+  xAI: "x.ai",
+  Glean: "glean.com",
+  Anduril: "anduril.com",
+  Writer: "writer.com",
+  Modal: "modal.com",
+  "Sierra AI": "sierra.ai",
+  "Harvey AI": "harvey.ai",
+  Suno: "suno.com",
+  Ideogram: "ideogram.ai",
+  Palantir: "palantir.com",
+  "Augment Code": "augmentcode.com",
+  Warp: "warp.dev",
+  Waymo: "waymo.com",
+  Databricks: "databricks.com",
+  Lindy: "lindy.ai",
+  "Applied Labs": "appliedlabs.ai",
+  Benchling: "benchling.com",
+  Synthesia: "synthesia.io",
+  ComfyUI: "comfy.org",
+  Lovable: "lovable.dev",
+  Coframe: "coframe.ai",
+  FlutterFlow: "flutterflow.io",
+  Netic: "netic.ai",
+  Mercor: "mercor.com",
 };
 
 type SortField = "title" | "company" | "location" | "department";
@@ -173,14 +197,14 @@ export function JobTable({ jobs }: { jobs: Job[] }) {
                   key={`${job.company}-${job.title}-${i}`}
                   className="border-b border-border/50 last:border-0 group hover:bg-muted/30 transition-colors"
                 >
-                  <td className="py-2.5 px-3 align-middle">
+                  <td className="py-2.5 px-3 align-middle max-w-[180px]">
                     <button
                       onClick={() =>
                         setActiveCompany(
                           activeCompany === job.company ? null : job.company
                         )
                       }
-                      className="flex items-center gap-2 hover:opacity-70 transition-opacity"
+                      className="flex items-center gap-2 hover:opacity-70 transition-opacity text-left min-w-0"
                     >
                       <img
                         src={`https://www.google.com/s2/favicons?domain=${domainMap[job.company] || "example.com"}&sz=64`}
@@ -189,7 +213,7 @@ export function JobTable({ jobs }: { jobs: Job[] }) {
                         height={18}
                         className="rounded-[3px] shrink-0"
                       />
-                      <span className="font-medium text-sm">
+                      <span className="font-medium text-sm truncate">
                         {job.company}
                       </span>
                     </button>
