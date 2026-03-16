@@ -12,14 +12,14 @@ export default function Home() {
         <AsciiBg />
         <div className="relative mx-auto max-w-[1200px] px-6 pointer-events-none">
           <div className="max-w-2xl pointer-events-auto">
-          <h1 className="text-[44px] font-medium tracking-[-0.02em] leading-[1.1] text-foreground font-serif">
-            Design jobs at
+          <h1 className="text-[64px] font-medium tracking-[-0.02em] leading-[1.1] text-foreground font-serif">
+            Curated design roles
             <br />
-            AI companies
+            at AI companies
           </h1>
           <p className="mt-5 text-[17px] leading-relaxed text-muted-foreground max-w-lg">
-            Curated design and design engineering positions at the
-            world&apos;s most notable artificial intelligence companies.
+            Design and design engineering positions at the
+            world&apos;s leading artificial intelligence companies.
           </p>
           </div>
         </div>
@@ -33,8 +33,8 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t border-border-light">
         <div className="mx-auto max-w-[1200px] px-6 h-14 flex items-center justify-between text-[13px] text-muted-foreground">
-          <span>designjobs.ai</span>
-          <span>Updated March 2026</span>
+          <span>Built by <a href="https://ch.sh" target="_blank" rel="noopener noreferrer" className="underline decoration-dotted decoration-muted-foreground/50 underline-offset-4 hover:decoration-solid hover:decoration-current">ch.sh</a></span>
+          <span>Last updated: Mar 16, 2026</span>
         </div>
       </footer>
     </div>
