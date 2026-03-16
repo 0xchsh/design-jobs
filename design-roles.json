@@ -1,0 +1,227 @@
+{
+  "scraped_date": "2026-03-16",
+  "companies": [
+    {
+      "company": "Midjourney",
+      "careers_url": "https://www.midjourney.com/careers",
+      "design_roles": [
+        {
+          "title": "Product Designer",
+          "location": "N/A",
+          "department": "Frontend",
+          "url": "https://www.midjourney.com/careers#frontend"
+        }
+      ]
+    },
+    {
+      "company": "Figma",
+      "careers_url": "https://www.figma.com/careers/",
+      "design_roles": [
+        {
+          "title": "Design Program Manager, AI",
+          "location": "San Francisco, United States",
+          "department": "Design",
+          "url": "https://boards.greenhouse.io/figma/jobs/5799555004?gh_jid=5799555004"
+        },
+        {
+          "title": "Director, Design - Communication Tools",
+          "location": "San Francisco, United States",
+          "department": "Design",
+          "url": "https://boards.greenhouse.io/figma/jobs/5661397004?gh_jid=5661397004"
+        },
+        {
+          "title": "Manager, Product Design",
+          "location": "San Francisco, United States",
+          "department": "Design",
+          "url": "https://boards.greenhouse.io/figma/jobs/5790585004?gh_jid=5790585004"
+        },
+        {
+          "title": "Product Designer",
+          "location": "San Francisco, United States",
+          "department": "Design",
+          "url": "https://boards.greenhouse.io/figma/jobs/5711571004?gh_jid=5711571004"
+        },
+        {
+          "title": "Product Designer, AI Models",
+          "location": "San Francisco, United States",
+          "department": "Design",
+          "url": "https://boards.greenhouse.io/figma/jobs/5711913004?gh_jid=5711913004"
+        },
+        {
+          "title": "Product Designer - Design, Dev, & AI Tools",
+          "location": "San Francisco, United States",
+          "department": "Design",
+          "url": "https://boards.greenhouse.io/figma/jobs/5711468004?gh_jid=5711468004"
+        },
+        {
+          "title": "Product Designer, Growth & Monetization",
+          "location": "San Francisco, United States",
+          "department": "Design",
+          "url": "https://boards.greenhouse.io/figma/jobs/5711595004?gh_jid=5711595004"
+        },
+        {
+          "title": "Researcher, Core Product Strategy",
+          "location": "San Francisco, United States",
+          "department": "Design",
+          "url": "https://boards.greenhouse.io/figma/jobs/5651744004?gh_jid=5651744004"
+        },
+        {
+          "title": "Web Content Strategist",
+          "location": "San Francisco, United States",
+          "department": "Design",
+          "url": "https://boards.greenhouse.io/figma/jobs/5736009004?gh_jid=5736009004"
+        },
+        {
+          "title": "Product Designer - Figma Weave",
+          "location": "Tel Aviv, Israel",
+          "department": "Weavy - Figma Weave",
+          "url": "https://boards.greenhouse.io/figma/jobs/5753515004?gh_jid=5753515004"
+        },
+        {
+          "title": "Designer Advocate, Federal",
+          "location": "San Francisco, United States",
+          "department": "Marketing",
+          "url": "https://boards.greenhouse.io/figma/jobs/5790731004?gh_jid=5790731004"
+        }
+      ]
+    },
+    {
+      "company": "Linear",
+      "careers_url": "https://linear.app/careers",
+      "design_roles": [
+        {
+          "title": "Designer, Web & Brand",
+          "location": "Europe, North America",
+          "department": "Magic",
+          "url": "https://linear.app/careers/4f10c2ca-d19a-42b5-9e1f-d1794c43dd89"
+        },
+        {
+          "title": "Senior / Staff Product Designer",
+          "location": "North America",
+          "department": "Design",
+          "url": "https://linear.app/careers/a264869e-f058-487c-ab7f-9b77dffa427c"
+        }
+      ]
+    },
+    {
+      "company": "Perplexity",
+      "careers_url": "https://www.perplexity.ai/hub/careers",
+      "design_roles": [
+        {
+          "title": "Lead Design Engineer \u2014 Growth & Marketing",
+          "location": "San Francisco, New York City",
+          "department": "Product Engineering",
+          "url": "https://jobs.ashbyhq.com/perplexity/30d27c9c-6d6f-4614-b6b3-35bd3ce641a9"
+        },
+        {
+          "title": "Frontend Engineer - Design Systems",
+          "location": "San Francisco",
+          "department": "Product Engineering",
+          "url": "https://jobs.ashbyhq.com/perplexity/36afb111-5c9c-4aec-9066-a2beb6f25f4b"
+        }
+      ]
+    },
+    {
+      "company": "Runway",
+      "careers_url": "https://runwayml.com/careers/",
+      "design_roles": [
+        {
+          "title": "Design Engineer",
+          "location": "Remote",
+          "department": "Runway Labs",
+          "url": "https://job-boards.greenhouse.io/runwayml/jobs/4360272005"
+        },
+        {
+          "title": "Art Director",
+          "location": "Remote",
+          "department": "Marketing & Creative",
+          "url": "https://job-boards.greenhouse.io/runwayml/jobs/4648129005"
+        }
+      ]
+    },
+    {
+      "company": "Character.ai",
+      "careers_url": "https://character.ai/careers",
+      "design_roles": [
+        {
+          "title": "Product Designer",
+          "location": "Redwood City, CA",
+          "department": "Product",
+          "url": "https://jobs.ashbyhq.com/character/344e6351-d8c1-4bfa-8672-f9f2faf5a1c6"
+        }
+      ]
+    },
+    {
+      "company": "Cursor",
+      "careers_url": "https://www.cursor.com/careers",
+      "design_roles": [
+        {
+          "title": "Brand Designer",
+          "location": "New York",
+          "department": "Design",
+          "url": "https://cursor.com/careers/brand-designer"
+        },
+        {
+          "title": "Design Engineer",
+          "location": "SF / NY",
+          "department": "Design",
+          "url": "https://cursor.com/careers/design-engineer"
+        },
+        {
+          "title": "Motion Designer",
+          "location": "SF / NY",
+          "department": "Design",
+          "url": "https://cursor.com/careers/motion-designer"
+        },
+        {
+          "title": "Product Designer",
+          "location": "SF / NY",
+          "department": "Design",
+          "url": "https://cursor.com/careers/product-designer"
+        }
+      ]
+    },
+    {
+      "company": "Replit",
+      "careers_url": "https://replit.com/site/careers",
+      "design_roles": [
+        {
+          "title": "Brand Design Lead",
+          "location": "Foster City, CA (Hybrid)",
+          "department": "Brand",
+          "url": "https://jobs.ashbyhq.com/replit/29876727-3fe7-43fa-8d0a-66ac972994c6"
+        },
+        {
+          "title": "Staff Product Designer",
+          "location": "Foster City, CA (Hybrid)",
+          "department": "Product Design",
+          "url": "https://jobs.ashbyhq.com/replit/32468016-3602-43a3-8860-7ddb47827814"
+        },
+        {
+          "title": "Staff Product Designer, Design System",
+          "location": "Foster City, CA (Hybrid)",
+          "department": "Product Design",
+          "url": "https://jobs.ashbyhq.com/replit/955b73a9-4aec-456d-876b-38ac98cbdecd"
+        },
+        {
+          "title": "Staff Product Designer, Visual Design",
+          "location": "Foster City, CA (Hybrid)",
+          "department": "Product Design",
+          "url": "https://jobs.ashbyhq.com/replit/1baa97c3-46e0-497f-bd30-05a926162e07"
+        },
+        {
+          "title": "Design Engineer",
+          "location": "Foster City, CA (Hybrid)",
+          "department": "Engineering",
+          "url": "https://jobs.ashbyhq.com/replit/2f1de5f1-48c2-4104-a697-a51fe1620508"
+        },
+        {
+          "title": "Engineering Manager, UX",
+          "location": "Foster City, CA (Hybrid)",
+          "department": "Engineering",
+          "url": "https://jobs.ashbyhq.com/replit/7e48291b-6188-46d7-bc21-1d66a512ffcb"
+        }
+      ]
+    }
+  ]
+}
