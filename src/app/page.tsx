@@ -145,7 +145,6 @@ function companyDomain(company: string): string {
     Mux: "mux.com",
     Spotify: "spotify.com",
     Plaid: "plaid.com",
-    OpenAI: "openai.com",
   };
   return map[company] || "example.com";
 }
