@@ -8,6 +8,14 @@
   --font-sans: "SF Pro Rounded", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   --font-serif: "New York", "SF Pro Serif", Georgia, "Times New Roman", serif;
   --font-mono: "SF Mono", ui-monospace, monospace;
+
+  /* Display sizes for hero sections */
+  --text-display-sm: 2.5rem;   /* 40px */
+  --text-display-lg: 4rem;     /* 64px */
+  /* Body variant slightly above base */
+  --text-body-md: 1.0625rem;   /* 17px */
+  /* Caption / fine print */
+  --text-caption: 0.8125rem;   /* 13px */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
