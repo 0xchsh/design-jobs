@@ -34,7 +34,7 @@ export default function Home() {
       <footer className="border-t border-border-light">
         <div className="mx-auto max-w-[1200px] px-6 h-14 flex items-center justify-between text-[13px] text-muted-foreground">
           <span>Built by <a href="https://ch.sh" target="_blank" rel="noopener noreferrer" className="underline decoration-dotted decoration-muted-foreground/50 underline-offset-4 hover:decoration-solid hover:decoration-current">ch.sh</a></span>
-          <span>Last updated: Mar 16, 2026</span>
+          <span>Last updated: Mar 17, 2026</span>
         </div>
       </footer>
     </div>

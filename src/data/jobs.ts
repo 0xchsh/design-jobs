@@ -260,15 +260,6 @@ export const jobs: Job[] = [
     department: "Product",
   },
 
-  // ── Codegen ────────────────────────────────────────────────
-  {
-    title: "Design Engineer",
-    company: "Codegen",
-    location: "San Francisco",
-    url: "https://jobs.ashbyhq.com/codegen/e39b5273-a827-4af6-885d-fafbb6e7f974",
-    department: "Engineering",
-  },
-
   // ── Coder ──────────────────────────────────────────────────
   {
     title: "Product Designer",
