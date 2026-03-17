@@ -107,7 +107,6 @@ const companies: CompanyConfig[] = [
   { company: "Warp", platform: "greenhouse", boardToken: "warp" },
   { company: "Waymo", platform: "greenhouse", boardToken: "waymo" },
   { company: "Databricks", platform: "greenhouse", boardToken: "databricks" },
-  { company: "Discord", platform: "greenhouse", boardToken: "discord" },
   { company: "Pinterest", platform: "greenhouse", boardToken: "pinterest" },
   { company: "Twitch", platform: "greenhouse", boardToken: "twitch" },
   { company: "Reddit", platform: "greenhouse", boardToken: "reddit" },
@@ -144,6 +143,31 @@ const companies: CompanyConfig[] = [
   { company: "Figure AI", platform: "greenhouse", boardToken: "figureai" },
   { company: "Buildkite", platform: "greenhouse", boardToken: "buildkite" },
   { company: "You.com", platform: "greenhouse", boardToken: "youcom" },
+  { company: "AssemblyAI", platform: "greenhouse", boardToken: "assemblyai" },
+  { company: "Typeface", platform: "greenhouse", boardToken: "typeface" },
+  { company: "Fireworks AI", platform: "greenhouse", boardToken: "fireworksai" },
+  { company: "Hex", platform: "greenhouse", boardToken: "hextechnologies" },
+  { company: "Udio", platform: "greenhouse", boardToken: "udio" },
+  { company: "Arize AI", platform: "greenhouse", boardToken: "arizeai" },
+  { company: "Labelbox", platform: "greenhouse", boardToken: "labelbox" },
+  { company: "Temporal", platform: "greenhouse", boardToken: "temporaltechnologies" },
+  { company: "HubSpot", platform: "greenhouse", boardToken: "hubspotjobs" },
+  { company: "Cloudflare", platform: "greenhouse", boardToken: "cloudflare" },
+  { company: "MongoDB", platform: "greenhouse", boardToken: "mongodb" },
+  { company: "Okta", platform: "greenhouse", boardToken: "okta" },
+  { company: "Datadog", platform: "greenhouse", boardToken: "datadog" },
+  { company: "Elastic", platform: "greenhouse", boardToken: "elastic" },
+  { company: "Typeform", platform: "greenhouse", boardToken: "typeform" },
+  { company: "Bolt", platform: "greenhouse", boardToken: "stackblitz" },
+  { company: "Klaviyo", platform: "greenhouse", boardToken: "klaviyo" },
+  { company: "Squarespace", platform: "greenhouse", boardToken: "squarespace" },
+  { company: "Nubank", platform: "greenhouse", boardToken: "nubank" },
+  { company: "Faire", platform: "greenhouse", boardToken: "faire" },
+  { company: "Chime", platform: "greenhouse", boardToken: "chime" },
+  { company: "GlossGenius", platform: "greenhouse", boardToken: "glossgenius" },
+  { company: "Pendo", platform: "greenhouse", boardToken: "pendo" },
+  { company: "Affirm", platform: "greenhouse", boardToken: "affirm" },
+  { company: "Sigma Computing", platform: "greenhouse", boardToken: "sigmacomputing" },
   // Ashby
   { company: "Linear", platform: "ashby", orgSlug: "Linear" },
   { company: "Perplexity", platform: "ashby", orgSlug: "perplexity" },
@@ -200,12 +224,33 @@ const companies: CompanyConfig[] = [
   { company: "Sentry", platform: "ashby", orgSlug: "sentry" },
   { company: "Coder", platform: "ashby", orgSlug: "coder" },
   { company: "Mux", platform: "ashby", orgSlug: "mux" },
+  { company: "Clay", platform: "ashby", orgSlug: "claylabs" },
+  { company: "Poolside", platform: "ashby", orgSlug: "poolside" },
+  { company: "Dust", platform: "ashby", orgSlug: "dust" },
+  { company: "Magic", platform: "ashby", orgSlug: "magic.dev" },
+  { company: "Twelve Labs", platform: "ashby", orgSlug: "twelve-labs" },
+  { company: "Physical Intelligence", platform: "ashby", orgSlug: "physicalintelligence" },
+  { company: "Letta", platform: "ashby", orgSlug: "letta" },
+  { company: "LangChain", platform: "ashby", orgSlug: "langchain" },
+  { company: "Pinecone", platform: "ashby", orgSlug: "pinecone" },
+  { company: "Weaviate", platform: "ashby", orgSlug: "weaviate" },
+  { company: "Roboflow", platform: "ashby", orgSlug: "roboflow" },
+  { company: "Attio", platform: "ashby", orgSlug: "attio" },
+  { company: "Sanity", platform: "ashby", orgSlug: "sanity" },
+  { company: "Supabase", platform: "ashby", orgSlug: "supabase" },
+  { company: "Snowflake", platform: "ashby", orgSlug: "snowflake" },
+  { company: "Sprig", platform: "ashby", orgSlug: "sprig" },
+  { company: "Pylon", platform: "ashby", orgSlug: "pylon" },
+  { company: "Mintlify", platform: "ashby", orgSlug: "mintlify" },
+  { company: "Browserbase", platform: "ashby", orgSlug: "browserbase" },
   // Lever
   { company: "Mistral AI", platform: "lever", orgSlug: "mistral" },
   { company: "Palantir", platform: "lever", orgSlug: "palantir" },
   { company: "Spotify", platform: "lever", orgSlug: "spotify" },
   { company: "Plaid", platform: "lever", orgSlug: "plaid" },
   { company: "Zoox", platform: "lever", orgSlug: "zoox" },
+  { company: "Contentsquare", platform: "lever", orgSlug: "contentsquare" },
+  { company: "LogRocket", platform: "lever", orgSlug: "logrocket" },
   // Workable
   { company: "Hugging Face", platform: "workable", accountSlug: "huggingface" },
   // Custom (URL liveness check only — can't auto-discover new jobs)
@@ -270,7 +315,43 @@ const EXCLUDE_PATTERNS = [
   /\bmultimedia designer/i,
   /\bdesign validation/i,
   /\bdesign verification/i,
+  /\bai trainer\b/i,
+  /\bai annotator\b/i,
+  /\bdata annotator\b/i,
+  /\bgraphic design.*trainer/i,
+  // Hardware / mechanical / physical design — not digital product design
+  /\bmechanical (design|engineer)/i,
+  /\bstructural design/i,
+  /\bhardware design/i,
+  /\bpcb design/i,
+  /\bpropulsion design/i,
+  /\bpower system.*design/i,
+  /\bharness design/i,
+  /\btool design/i,
+  /\baircraft.*design/i,
+  /\bbattery pack designer/i,
+  /\bhigh voltage/i,
+  /\bengineering specialist/i,
+  /\bsystems engineer/i,
+  /\belectronics design/i,
 ];
+
+// Only show US-based or remote-eligible roles
+const NON_US_PATTERNS = [
+  /\b(canada|uk|united kingdom|england|europe|germany|france|netherlands|amsterdam|london|berlin|paris|prague|czech republic|india|australia|singapore|japan|korea|israel|sweden|spain|italy|portugal|ireland|poland|ukraine|brazil|mexico|latin america|emea|apac)\b/i,
+];
+const US_PATTERNS = [
+  /\b(remote|worldwide|global|anywhere|distributed|usa|united states?)\b/i,
+  /\b(california|new york|texas|washington|colorado|illinois|massachusetts|georgia|florida|oregon|virginia|north carolina|new jersey|minnesota|arizona|ohio|michigan)\b/i,
+  /\b(san francisco|new york city|nyc|sf|los angeles|seattle|austin|boston|chicago|denver|atlanta|miami|portland|san diego|brooklyn|manhattan)\b/i,
+];
+
+function isUSEligible(location: string): boolean {
+  if (!location) return true; // unspecified — allow
+  if (NON_US_PATTERNS.some((re) => re.test(location))) return false;
+  if (US_PATTERNS.some((re) => re.test(location))) return true;
+  return true; // unknown — allow
+}
 
 function isDesignRole(title: string, _department: string): boolean {
   const titleMatch = DESIGN_TITLE_PATTERNS.some((re) => re.test(title));
@@ -305,7 +386,7 @@ async function fetchGreenhouse(boardToken: string, company: string): Promise<Job
   const data = (await res.json()) as { jobs: GreenhouseJob[] };
 
   return data.jobs
-    .filter((job) => isDesignRole(job.title, ""))
+    .filter((job) => isDesignRole(job.title, "") && isUSEligible(job.location.name))
     .map((job) => ({
       title: job.title,
       company,
@@ -326,7 +407,7 @@ async function fetchAshby(orgSlug: string, company: string): Promise<Job[]> {
   const data = (await res.json()) as { jobs: AshbyJob[] };
 
   return data.jobs
-    .filter((j) => isDesignRole(j.title, `${j.department ?? ""} ${j.team ?? ""}`))
+    .filter((j) => isDesignRole(j.title, `${j.department ?? ""} ${j.team ?? ""}`) && isUSEligible(j.location))
     .map((j) => ({
       title: j.title,
       company,
@@ -348,7 +429,8 @@ async function fetchLever(orgSlug: string, company: string): Promise<Job[]> {
 
   return data
     .filter((j) =>
-      isDesignRole(j.text, `${j.categories.team ?? ""} ${j.categories.department ?? ""}`)
+      isDesignRole(j.text, `${j.categories.team ?? ""} ${j.categories.department ?? ""}`) &&
+      isUSEligible(j.categories.location)
     )
     .map((j) => ({
       title: j.text,
@@ -374,7 +456,10 @@ async function fetchWorkable(accountSlug: string, company: string): Promise<Job[
   const data = (await res.json()) as { results: WorkableJob[] };
 
   return data.results
-    .filter((j) => isDesignRole(j.title, (j.department ?? []).join(" ")))
+    .filter((j) => isDesignRole(j.title, (j.department ?? []).join(" ")) && isUSEligible(
+      j.locations?.map((l) => [l.city, l.region, l.country].filter(Boolean).join(", ")).join(" | ") ||
+      [j.location?.city, j.location?.region, j.location?.country].filter(Boolean).join(", ")
+    ))
     .map((j) => {
       const loc = j.locations?.length
         ? j.locations.map((l) => [l.city, l.region, l.country].filter(Boolean).join(", ")).join(" | ")
@@ -448,16 +533,25 @@ function loadExistingJobs(): Job[] {
 // Finds design job postings on supported ATS platforms for companies
 // not already in the companies list, then fetches their full job data.
 
+// Keywords that indicate a string is a job title, not a company name
+const JOB_TITLE_WORDS = /\b(designer|developer|engineer|manager|director|researcher|analyst|specialist|architect|consultant|producer|strategist|trainer|annotator|coordinator|lead|writer|scientist)\b/i;
+
 function inferCompanyFromTitle(title: string | null | undefined, fallback: string): string {
   if (!title) return fallback;
 
-  // "Job Title at Company | Platform" or "Job Title at Company - Platform"
-  const atMatch = title.match(/\bat\s+(.+?)(?:\s*[|–\-]|\s*$)/i);
-  if (atMatch) return atMatch[1].trim();
+  // "Job Title at Company" or "Job Title @ Company"
+  const atMatch = title.match(/\b(?:at|@)\s+(.+?)(?:\s*[|–\-]|\s*$)/i);
+  if (atMatch) {
+    const candidate = atMatch[1].trim();
+    if (!JOB_TITLE_WORDS.test(candidate) && candidate.length < 60) return candidate;
+  }
 
-  // "Company | Job Title" or "Company - Job Title"
+  // "Company | Job Title" or "Company - Job Title" — only if company part looks like a proper name
   const pipeMatch = title.match(/^(.+?)\s*[|–\-]\s*.+/);
-  if (pipeMatch && pipeMatch[1].length < 50) return pipeMatch[1].trim();
+  if (pipeMatch && pipeMatch[1].length < 40) {
+    const candidate = pipeMatch[1].trim();
+    if (!JOB_TITLE_WORDS.test(candidate)) return candidate;
+  }
 
   return fallback;
 }
@@ -475,35 +569,154 @@ async function discoverViaExa(): Promise<Job[]> {
   const newJobs: Job[] = [];
 
   // Track already-known ATS tokens to avoid duplicates
-  const knownGreenhouse = new Set(
-    companies.filter((c) => c.platform === "greenhouse").map((c) => (c as { boardToken: string }).boardToken)
-  );
-  const knownAshby = new Set(
-    companies
-      .filter((c) => c.platform === "ashby")
-      .map((c) => (c as { orgSlug: string }).orgSlug.toLowerCase())
-  );
-  const knownLever = new Set(
-    companies.filter((c) => c.platform === "lever").map((c) => (c as { orgSlug: string }).orgSlug)
-  );
+  // Also includes tokens for companies we explicitly don't want to feature
+  const EXCLUDED_GREENHOUSE = new Set([
+    "airbnb", "ithaka", "innovecs", "wehrtyou", "digitalocean98",
+    "criticalmass", "robotsandpencils", "spothopper", "monstro", "boldbusiness", "pallet", "circleso", "onbe", "fluxon", "emergentlabsinc",
+    "oliver",        // marketing agency, non-US
+    "rga",           // advertising agency
+    "infuse",        // marketing agency
+    "bpcs",          // unknown non-tech
+    "soldejaneiro",  // beauty brand
+    "birdygrey",     // wedding brand
+    "eucalyptus",    // telehealth
+    "perpay",        // consumer lending
+    "skylighthq",    // military financial wellness
+    "panoramaed",    // education data
+    "medeanalytics", // healthcare analytics
+    "qualifiedhealth","pomelocare",  // healthcare
+    "upwork",        // freelancing platform
+    "willowtree",    // app dev agency
+    "mobilityware",  // mobile games
+    "cobaltio",      // pen testing
+    "kettle",        // insurance tech
+    "nextstreet",    // community development
+    "toast",         // restaurant tech
+    "esri",          // GIS mapping
+    "mozilla",       // browser (non-AI design roles)
+    "sphereentertainment", // entertainment venue
+    "cargurus",      // car marketplace
+    "iconcareers",   // job board
+    "trellis",       // unknown
+    "perplexityai",  // duplicate (already have "perplexity")
+    "postman",       // API tools (non-AI design focus)
+    "apolloio",      // sales intelligence
+    "snorkelai",     // data labeling
+    "lilasciences",  // biotech
+    "meshy",         // 3D AI - could keep but niche
+    "postscript",    // SMS marketing
+    "perfectserve",  // healthcare communication
+    "wisetack",      // consumer financing
+    "worldquant",    // quant hedge fund
+    "skylight",      // payroll for hourly workers
+    "phaidra",       // industrial AI ops (niche)
+  ]);
+  const EXCLUDED_ASHBY = new Set([
+    "handshake", // posts AI trainer/annotator roles, not design jobs
+    "weave",     // dental/vet practice management
+    "codeium",   // 404
+  ]);
+  const EXCLUDED_LEVER = new Set([
+    "redhorsecorp", "saronic", "aechelon", "USMobile", "nominal", "valence",
+    "ladders", "Ubiminds", "ubiminds", "oowlish", "zaimler", "nitra", "tryjeeves", "remofirst", "Yassir",
+    "superside",          // creative agency
+    "AIFund",             // investment firm
+    "articulate",         // e-learning authoring tool
+    "sonarsource",        // code quality, not AI product
+    "whoop",              // fitness wearable
+    "kitmanlabs",         // sports analytics
+    "talkiatry",          // mental health staffing
+    "wisdomai",           // HR analytics
+    "suger",              // commerce marketplace
+    "vivun",              // sales presales
+    "Eve",                // unclear
+    "zocks",              // unclear
+    "shieldai", "field-ai", // defense AI — hardware/mechanical design roles
+    "ro",                 // healthcare
+    "verifiable",         // credential verification
+    "Flex",               // fintech
+    "lunaphysicaltherapy",// physical therapy
+    "accurate",           // background checks
+    "gojob",              // staffing
+    "tradeify",           // trading
+    "peerspace",          // venue rental
+    "triallibrary",       // clinical trials
+    "gopuff",             // delivery
+    "synapticure",        // genetic disease
+    "luxurypresence",     // real estate tech
+    "gohighlevel",        // marketing SaaS
+    "useinsider",         // marketing automation
+    "brilliant",          // education/math puzzles
+    "smart-working-solutions", // HR
+    "CordTechnologies",   // data labeling (non-product design)
+    "NormAI",             // regulatory AI
+    "15five",             // HR performance
+    "scaleway",           // European cloud provider
+    "ivo",                // contract AI (small)
+    "augment",            // sales AI
+    "finix",              // payments
+    "bosonai",            // unclear
+    "hive",               // content moderation AI
+    "kumo",               // graph ML
+    "metabase",           // BI tool
+    "secureframe",        // compliance
+    "jumpcloud",          // IT management
+    "highspot",           // sales enablement
+    "clovirtualfashion",  // 3D fashion software
+    "agiloft",            // contract management
+    "weave",              // dental/vet practice management
+  ]);
+  const knownGreenhouse = new Set([
+    ...companies.filter((c) => c.platform === "greenhouse").map((c) => (c as { boardToken: string }).boardToken),
+    ...EXCLUDED_GREENHOUSE,
+  ]);
+  const knownAshby = new Set([
+    ...companies.filter((c) => c.platform === "ashby").map((c) => (c as { orgSlug: string }).orgSlug.toLowerCase()),
+    ...EXCLUDED_ASHBY,
+  ]);
+  const knownLever = new Set([
+    ...companies.filter((c) => c.platform === "lever").map((c) => (c as { orgSlug: string }).orgSlug),
+    ...EXCLUDED_LEVER,
+  ]);
 
-  const sinceDate = new Date(Date.now() - 60 * 24 * 60 * 60 * 1000).toISOString().split("T")[0];
+  // Only look at postings from the last 6 months to keep results fresh and relevant
+  const sinceDate = new Date(Date.now() - 180 * 24 * 60 * 60 * 1000).toISOString().split("T")[0];
 
-  // Search each major ATS separately for better precision
-  const searches: { domains: string[]; platform: "greenhouse" | "ashby" | "lever" }[] = [
-    { domains: ["job-boards.greenhouse.io", "boards.greenhouse.io"], platform: "greenhouse" },
-    { domains: ["jobs.ashbyhq.com"], platform: "ashby" },
-    { domains: ["jobs.lever.co"], platform: "lever" },
+  // Search each major ATS separately for better precision, using multiple queries
+  // to maximize discovery of AI-focused companies hiring designers
+  const searches: { domains: string[]; platform: "greenhouse" | "ashby" | "lever"; query: string }[] = [
+    {
+      domains: ["job-boards.greenhouse.io", "boards.greenhouse.io"],
+      platform: "greenhouse",
+      query: '"product designer" OR "design engineer" artificial intelligence OR "machine learning" OR LLM OR "generative AI" startup',
+    },
+    {
+      domains: ["job-boards.greenhouse.io", "boards.greenhouse.io"],
+      platform: "greenhouse",
+      query: '"UX designer" OR "brand designer" OR "visual designer" OR "motion designer" AI startup technology',
+    },
+    {
+      domains: ["jobs.ashbyhq.com"],
+      platform: "ashby",
+      query: '"product designer" OR "design engineer" OR "UX designer" artificial intelligence OR "machine learning" OR LLM OR "generative AI"',
+    },
+    {
+      domains: ["jobs.ashbyhq.com"],
+      platform: "ashby",
+      query: '"brand designer" OR "visual designer" OR "motion designer" OR "design lead" AI startup technology',
+    },
+    {
+      domains: ["jobs.lever.co"],
+      platform: "lever",
+      query: '"product designer" OR "design engineer" OR "UX designer" artificial intelligence OR "machine learning" OR LLM startup',
+    },
   ];
 
-  const query =
-    '"product designer" OR "design engineer" OR "UX designer" OR "UI designer" AI technology startup';
-
-  for (const { domains, platform } of searches) {
+  for (const { domains, platform, query } of searches) {
     let results: { url: string; title?: string | null }[] = [];
     try {
       const response = await exa.search(query, {
-        numResults: 30,
+        numResults: 50,
         includeDomains: domains,
         useAutoprompt: false,
         startPublishedDate: sinceDate,

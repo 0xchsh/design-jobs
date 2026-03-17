@@ -113,7 +113,115 @@ const domainMap: Record<string, string> = {
   Mux: "mux.com",
   Spotify: "spotify.com",
   Plaid: "plaid.com",
+  Buildkite: "buildkite.com",
+  "You.com": "you.com",
+  Clay: "clay.com",
+  Poolside: "poolside.ai",
+  Dust: "dust.tt",
+  Magic: "magic.dev",
+  "Twelve Labs": "twelvelabs.io",
+  AssemblyAI: "assemblyai.com",
+  Typeface: "typeface.ai",
+  "Fireworks AI": "fireworks.ai",
+  Hex: "hex.tech",
+  Udio: "udio.com",
+  Sourcegraph: "sourcegraph.com",
+  CoreWeave: "coreweave.com",
+  "Figure AI": "figure.ai",
+  Deepgram: "deepgram.com",
+  Lambda: "lambdalabs.com",
+  Quora: "quora.com",
+  Krea: "krea.ai",
+  "The Browser Company": "arc.net",
+  Infisical: "infisical.com",
+  Arcade: "arcade.software",
+  "Prime Intellect": "primeintellect.ai",
+  "Noise Labs": "noise.xyz",
+  Doji: "doji.art",
+  Navattic: "navattic.com",
+  Cognition: "cognition.ai",
+  "Augment Code": "augmentcode.com",
+  "Physical Intelligence": "physicalintelligence.ai",
+  Letta: "letta.ai",
+  LangChain: "langchain.com",
+  Pinecone: "pinecone.io",
+  Weaviate: "weaviate.io",
+  Roboflow: "roboflow.com",
+  Attio: "attio.com",
+  Sanity: "sanity.io",
+  Supabase: "supabase.com",
+  Snowflake: "snowflake.com",
+  "Arize AI": "arize.com",
+  Labelbox: "labelbox.com",
+  Temporal: "temporal.io",
+  HubSpot: "hubspot.com",
+  Shopify: "shopify.com",
+  Atlassian: "atlassian.com",
+  Cloudflare: "cloudflare.com",
+  MongoDB: "mongodb.com",
+  Zendesk: "zendesk.com",
+  Okta: "okta.com",
+  Datadog: "datadoghq.com",
+  Elastic: "elastic.co",
+  Twilio: "twilio.com",
+  Dropbox: "dropbox.com",
+  Typeform: "typeform.com",
+  Bolt: "bolt.new",
+  Klaviyo: "klaviyo.com",
+  Squarespace: "squarespace.com",
+  Nubank: "nubank.com.br",
+  Faire: "faire.com",
+  Chime: "chime.com",
+  DoorDash: "doordash.com",
+  Contentsquare: "contentsquare.com",
+  Affirm: "affirm.com",
+  GlossGenius: "glossgenius.com",
+  Hightouch: "hightouch.com",
+  LogRocket: "logrocket.com",
+  "Lucid Software": "lucid.app",
+  "Sigma Computing": "sigmacomputing.com",
+  Sprig: "sprig.com",
+  Rogo: "rogo.ai",
+  "asari.ai": "asari.ai",
+  brandlight: "brandlight.co",
+  e2b: "e2b.dev",
+  launchdarkly: "launchdarkly.com",
+  skydio: "skydio.com",
+  Wayve: "wayve.ai",
+  Browserbase: "browserbase.com",
+  Mintlify: "mintlify.com",
+  Pylon: "usepylon.com",
+  Sprig: "sprig.com",
 };
+
+function CompanyIcon({ company }: { company: string }) {
+  const domain = domainMap[company];
+  if (!domain) {
+    return (
+      <span className="inline-flex items-center justify-center w-[18px] h-[18px] rounded-[3px] shrink-0 bg-muted text-[9px] font-semibold text-muted-foreground select-none">
+        {company[0]?.toUpperCase()}
+      </span>
+    );
+  }
+  return (
+    <img
+      src={`https://www.google.com/s2/favicons?domain=${domain}&sz=64`}
+      alt=""
+      width={18}
+      height={18}
+      className="rounded-[3px] shrink-0"
+      onError={(e) => {
+        const img = e.target as HTMLImageElement;
+        img.replaceWith(
+          Object.assign(document.createElement("span"), {
+            className: "inline-flex items-center justify-center w-[18px] h-[18px] rounded-[3px] shrink-0 bg-muted text-[9px] font-semibold text-muted-foreground select-none",
+            textContent: company[0]?.toUpperCase() ?? "?",
+          })
+        );
+      }}
+    />
+  );
+}
 
 type SortField = "title" | "company" | "location" | "postedAt";
 
@@ -133,8 +241,8 @@ function formatDate(iso: string): string {
 
 export function JobTable({ jobs }: { jobs: Job[] }) {
   const [search, setSearch] = useState("");
-  const [sortField, setSortField] = useState<SortField>("postedAt");
-  const [sortAsc, setSortAsc] = useState(false);
+  const [sortField, setSortField] = useState<SortField>("company");
+  const [sortAsc, setSortAsc] = useState(true);
   const [activeCompany, setActiveCompany] = useState<string | null>(null);
   const [remoteOnly, setRemoteOnly] = useState(false);
 
@@ -308,14 +416,7 @@ export function JobTable({ jobs }: { jobs: Job[] }) {
                       }
                       className="flex items-center gap-2 hover:opacity-70 transition-opacity text-left min-w-0"
                     >
-                      <img
-                        src={`https://www.google.com/s2/favicons?domain=${domainMap[job.company] || "example.com"}&sz=64`}
-                        alt=""
-                        width={18}
-                        height={18}
-                        className="rounded-[3px] shrink-0"
-                        onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
-                      />
+                      <CompanyIcon company={job.company} />
                       <span className="font-medium text-sm truncate">
                         {job.company}
                       </span>
@@ -324,10 +425,10 @@ export function JobTable({ jobs }: { jobs: Job[] }) {
                   <td className="py-2.5 px-3 align-middle text-sm">
                     {job.title}
                   </td>
-                  <td className="py-2.5 px-3 align-middle hidden md:table-cell text-muted-foreground text-xs">
+                  <td className="py-2.5 px-3 align-middle hidden md:table-cell text-muted-foreground text-sm max-w-[240px] truncate">
                     {job.location}
                   </td>
-                  <td className="py-2.5 px-3 align-middle hidden lg:table-cell text-muted-foreground text-xs">
+                  <td className="py-2.5 px-3 align-middle hidden lg:table-cell text-muted-foreground text-sm">
                     {formatDate(job.postedAt)}
                   </td>
                   <td className="py-2.5 px-3 align-middle text-right">
