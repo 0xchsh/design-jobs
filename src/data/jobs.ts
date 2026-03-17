@@ -403,10 +403,10 @@ export const jobs: Job[] = [
   {
     title: "Product Designer (f/m/d)",
     company: "Contentful",
-    location: "Dublin, Dublin, Ireland | Berlin, Berlin, Germany | London, England, United Kingdom",
-    url: "https://job-boards.greenhouse.io/contentful/jobs/7482791",
+    location: "Berlin, Berlin, Germany | London, England, United Kingdom | Dublin, Dublin, Ireland",
+    url: "https://job-boards.greenhouse.io/contentful/jobs/7485289",
     department: "",
-    postedAt: "2025-12-18T16:41:19-05:00",
+    postedAt: "2025-12-18T16:41:22-05:00",
   },
 
   // ── CoreWeave ──────────────────────────────────────────────

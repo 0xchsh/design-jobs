@@ -126,9 +126,9 @@ function formatDate(iso: string): string {
   if (diffDays === 0) return "Today";
   if (diffDays === 1) return "Yesterday";
   if (diffDays < 7) return `${diffDays}d ago`;
-  if (diffDays < 30) return `${Math.floor(diffDays / 7)}w ago`;
-  if (diffDays < 365) return `${Math.floor(diffDays / 30)}mo ago`;
-  return `${Math.floor(diffDays / 365)}y ago`;
+  const weeks = Math.floor(diffDays / 7);
+  if (weeks > 4) return "5w+ ago";
+  return `${weeks}w ago`;
 }
 
 export function JobTable({ jobs }: { jobs: Job[] }) {
@@ -180,8 +180,8 @@ export function JobTable({ jobs }: { jobs: Job[] }) {
   return (
     <div>
       {/* Controls */}
-      <div className="flex items-center gap-2 mb-4">
-        <div className="relative min-w-[400px]">
+      <div className="flex flex-wrap items-center gap-4 mb-4">
+        <div className="relative w-full sm:min-w-[400px] sm:w-auto">
           <svg
             className="absolute left-2.5 top-1/2 -translate-y-1/2 text-muted-foreground"
             width="14"

@@ -11,11 +11,9 @@ export default function Home() {
       <header className="relative pt-[160px] pb-12">
         <AsciiBg />
         <div className="relative mx-auto max-w-[1200px] px-6 pointer-events-none">
-          <div className="max-w-2xl pointer-events-auto">
+          <div className="max-w-lg pointer-events-auto">
           <h1 className="text-[40px] sm:text-[64px] font-medium tracking-[-0.02em] leading-[1.1] text-foreground font-serif">
-            Curated design roles
-            <br />
-            at AI companies
+            Curated design roles at AI companies
           </h1>
           <p className="mt-5 text-[17px] leading-relaxed text-muted-foreground max-w-lg">
             Design and design engineering positions at the

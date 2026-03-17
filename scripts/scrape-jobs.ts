@@ -1,5 +1,6 @@
 import { writeFileSync, readFileSync } from "fs";
 import { join } from "path";
+import Exa from "exa-js";
 
 // ── Types ──────────────────────────────────────────────────────────
 
@@ -443,6 +444,120 @@ function loadExistingJobs(): Job[] {
   return jobs;
 }
 
+// ── Exa AI discovery ───────────────────────────────────────────────
+// Finds design job postings on supported ATS platforms for companies
+// not already in the companies list, then fetches their full job data.
+
+function inferCompanyFromTitle(title: string | null | undefined, fallback: string): string {
+  if (!title) return fallback;
+
+  // "Job Title at Company | Platform" or "Job Title at Company - Platform"
+  const atMatch = title.match(/\bat\s+(.+?)(?:\s*[|–\-]|\s*$)/i);
+  if (atMatch) return atMatch[1].trim();
+
+  // "Company | Job Title" or "Company - Job Title"
+  const pipeMatch = title.match(/^(.+?)\s*[|–\-]\s*.+/);
+  if (pipeMatch && pipeMatch[1].length < 50) return pipeMatch[1].trim();
+
+  return fallback;
+}
+
+async function discoverViaExa(): Promise<Job[]> {
+  const apiKey = process.env.EXA_API_KEY;
+  if (!apiKey) {
+    console.log("→ Exa discovery (skipping — EXA_API_KEY not set)");
+    return [];
+  }
+
+  console.log("→ Exa AI discovery");
+
+  const exa = new Exa(apiKey);
+  const newJobs: Job[] = [];
+
+  // Track already-known ATS tokens to avoid duplicates
+  const knownGreenhouse = new Set(
+    companies.filter((c) => c.platform === "greenhouse").map((c) => (c as { boardToken: string }).boardToken)
+  );
+  const knownAshby = new Set(
+    companies
+      .filter((c) => c.platform === "ashby")
+      .map((c) => (c as { orgSlug: string }).orgSlug.toLowerCase())
+  );
+  const knownLever = new Set(
+    companies.filter((c) => c.platform === "lever").map((c) => (c as { orgSlug: string }).orgSlug)
+  );
+
+  const sinceDate = new Date(Date.now() - 60 * 24 * 60 * 60 * 1000).toISOString().split("T")[0];
+
+  // Search each major ATS separately for better precision
+  const searches: { domains: string[]; platform: "greenhouse" | "ashby" | "lever" }[] = [
+    { domains: ["job-boards.greenhouse.io", "boards.greenhouse.io"], platform: "greenhouse" },
+    { domains: ["jobs.ashbyhq.com"], platform: "ashby" },
+    { domains: ["jobs.lever.co"], platform: "lever" },
+  ];
+
+  const query =
+    '"product designer" OR "design engineer" OR "UX designer" OR "UI designer" AI technology startup';
+
+  for (const { domains, platform } of searches) {
+    let results: { url: string; title?: string | null }[] = [];
+    try {
+      const response = await exa.search(query, {
+        numResults: 30,
+        includeDomains: domains,
+        useAutoprompt: false,
+        startPublishedDate: sinceDate,
+      });
+      results = response.results;
+    } catch (err) {
+      console.error(`  Exa search error (${platform}): ${err}`);
+      continue;
+    }
+
+    for (const result of results) {
+      const url = result.url;
+
+      if (platform === "greenhouse") {
+        const match = url.match(/greenhouse\.io\/([^\/]+)\/jobs\/\d+/);
+        if (!match) continue;
+        const token = match[1];
+        if (knownGreenhouse.has(token)) continue;
+        knownGreenhouse.add(token);
+        const company = inferCompanyFromTitle(result.title, token);
+        console.log(`  Exa found Greenhouse: ${company} (${token})`);
+        const jobs = await fetchGreenhouse(token, company);
+        console.log(`    → ${jobs.length} design roles`);
+        newJobs.push(...jobs);
+      } else if (platform === "ashby") {
+        const match = url.match(/jobs\.ashbyhq\.com\/([^\/]+)/);
+        if (!match) continue;
+        const slug = match[1];
+        if (knownAshby.has(slug.toLowerCase())) continue;
+        knownAshby.add(slug.toLowerCase());
+        const company = inferCompanyFromTitle(result.title, slug);
+        console.log(`  Exa found Ashby: ${company} (${slug})`);
+        const jobs = await fetchAshby(slug, company);
+        console.log(`    → ${jobs.length} design roles`);
+        newJobs.push(...jobs);
+      } else if (platform === "lever") {
+        const match = url.match(/jobs\.lever\.co\/([^\/]+)/);
+        if (!match) continue;
+        const slug = match[1];
+        if (knownLever.has(slug)) continue;
+        knownLever.add(slug);
+        const company = inferCompanyFromTitle(result.title, slug);
+        console.log(`  Exa found Lever: ${company} (${slug})`);
+        const jobs = await fetchLever(slug, company);
+        console.log(`    → ${jobs.length} design roles`);
+        newJobs.push(...jobs);
+      }
+    }
+  }
+
+  console.log(`  Total via Exa: ${newJobs.length} design roles`);
+  return newJobs;
+}
+
 // ── Main ───────────────────────────────────────────────────────────
 
 async function main() {
@@ -479,6 +594,10 @@ async function main() {
     console.log(`  Found ${jobs.length} design roles`);
     allJobs.push(...jobs);
   }
+
+  // Discover additional companies via Exa AI
+  const exaJobs = await discoverViaExa();
+  allJobs.push(...exaJobs);
 
   // Merge roles with same company + title but different locations
   const mergeMap = new Map<string, Job>();

@@ -22,12 +22,21 @@ export const metadata: Metadata = {
       "Browse curated design and design engineering jobs at the world's leading AI companies.",
     type: "website",
     url: "https://designjobs.fyi",
+    images: [
+      {
+        url: "https://designjobs.fyi/og.png",
+        width: 1456,
+        height: 816,
+        alt: "AI Design Jobs — Curated design roles at top AI companies",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "AI Design Jobs — Curated Design Roles at Top AI Companies",
     description:
       "Browse curated design and design engineering jobs at the world's leading AI companies.",
+    images: ["https://designjobs.fyi/og.png"],
   },
 };
 
