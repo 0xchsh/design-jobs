@@ -113,7 +113,6 @@ const domainMap: Record<string, string> = {
   Mux: "mux.com",
   Spotify: "spotify.com",
   Plaid: "plaid.com",
-  OpenAI: "openai.com",
 };
 
 type SortField = "title" | "company" | "location" | "postedAt";
