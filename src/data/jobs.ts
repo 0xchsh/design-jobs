@@ -1205,6 +1205,113 @@ export const jobs: Job[] = [
     department: "Engineering, Product, and Design",
   },
 
+  // ── OpenAI ─────────────────────────────────────────────────
+  {
+    title: "Content Designer",
+    company: "OpenAI",
+    location: "San Francisco",
+    url: "https://jobs.ashbyhq.com/openai/472db8e3-37ee-4c62-be3e-a1266869694a",
+    department: "Product Design",
+  },
+  {
+    title: "Creative Director, Art",
+    company: "OpenAI",
+    location: "San Francisco",
+    url: "https://jobs.ashbyhq.com/openai/eb73ffd3-8d38-46be-9035-bae7b2f16098",
+    department: "Marketing",
+  },
+  {
+    title: "Designer, Creative Studio",
+    company: "OpenAI",
+    location: "San Francisco",
+    url: "https://jobs.ashbyhq.com/openai/19e41298-3559-4151-afd3-d3e465472fe8",
+    department: "Marketing",
+  },
+  {
+    title: "Executive Producer, Design",
+    company: "OpenAI",
+    location: "San Francisco",
+    url: "https://jobs.ashbyhq.com/openai/f75a7ec9-8e8a-49a2-8461-0665a13922e4",
+    department: "Marketing",
+  },
+  {
+    title: "Industrial Builds, Senior Project Manager, Design and Construction",
+    company: "OpenAI",
+    location: "San Francisco",
+    url: "https://jobs.ashbyhq.com/openai/806ddc92-8b5b-4339-a830-eb4378b4e146",
+    department: "Workplace",
+  },
+  {
+    title: "Lead Product Designer, Health AI",
+    company: "OpenAI",
+    location: "San Francisco",
+    url: "https://jobs.ashbyhq.com/openai/327141d7-a2aa-405b-88c6-90c920594423",
+    department: "Product Design",
+  },
+  {
+    title: "Physical Design Engineer ",
+    company: "OpenAI",
+    location: "San Francisco",
+    url: "https://jobs.ashbyhq.com/openai/5a265d2b-683f-4cea-9b69-8e137e704ab3",
+    department: "Scaling",
+  },
+  {
+    title: "Product Designer, Business Products",
+    company: "OpenAI",
+    location: "San Francisco",
+    url: "https://jobs.ashbyhq.com/openai/e253cfa4-bf03-44d5-b2cb-12a7ecc6f44a",
+    department: "Product Design",
+  },
+  {
+    title: "Product Designer, ChatGPT",
+    company: "OpenAI",
+    location: "San Francisco",
+    url: "https://jobs.ashbyhq.com/openai/09d97355-0437-4054-8604-73920c0beb1a",
+    department: "Product Design",
+  },
+  {
+    title: "Product Designer, Codex",
+    company: "OpenAI",
+    location: "San Francisco",
+    url: "https://jobs.ashbyhq.com/openai/697696a5-6f62-4898-9629-c31c7857959d",
+    department: "Product Design",
+  },
+  {
+    title: "Product Designer, Growth",
+    company: "OpenAI",
+    location: "San Francisco",
+    url: "https://jobs.ashbyhq.com/openai/ef88aaa6-f7e1-4afe-ab69-a13f2aa94eae",
+    department: "Product Design",
+  },
+  {
+    title: "Product Designer, Monetization Platform",
+    company: "OpenAI",
+    location: "San Francisco",
+    url: "https://jobs.ashbyhq.com/openai/47327eb8-dbb8-4823-8291-de42239d283b",
+    department: "Product Design",
+  },
+  {
+    title: "Quantitative UX Researcher",
+    company: "OpenAI",
+    location: "San Francisco",
+    url: "https://jobs.ashbyhq.com/openai/250c5184-edb5-49eb-bb7e-1ddb47f1140d",
+    department: "Data Science",
+  },
+  {
+    title: "Research Engineer/Scientist - Generative UI, Consumer Devices",
+    company: "OpenAI",
+    location: "San Francisco",
+    url: "https://jobs.ashbyhq.com/openai/8a99798d-eeb7-49b8-931c-2890a00837e8",
+    department: "Consumer Products",
+  },
+  {
+    title: "Strategic Sourcing, Design & Construction",
+    company: "OpenAI",
+    location: "San Francisco",
+    url: "https://jobs.ashbyhq.com/openai/76c91816-db8a-42fc-85e9-a3073534a31a",
+    department: "Finance",
+  },
+
   // ── Otter ──────────────────────────────────────────────────
   {
     title: "Product Design Lead, Otter/Menu - Mountain View",
@@ -2038,6 +2145,29 @@ export const jobs: Job[] = [
     location: "Palo Alto, CA; Remote",
     url: "https://job-boards.greenhouse.io/xai/jobs/4879789007",
     department: "Post-Training",
+  },
+
+  // ── Zoox ───────────────────────────────────────────────────
+  {
+    title: "Design Reliability Engineer – Sensor, Compute and EE Systems",
+    company: "Zoox",
+    location: "Foster City, CA",
+    url: "https://jobs.lever.co/zoox/63829003-24ba-4169-96a6-a3349b68bf17",
+    department: "Reliability Engineering",
+  },
+  {
+    title: "Design Systems Intern",
+    company: "Zoox",
+    location: "Foster City, CA",
+    url: "https://jobs.lever.co/zoox/c5d5cc3a-d380-4278-8aec-d88cae791633",
+    department: "Product",
+  },
+  {
+    title: "Senior UX/UI Designer, Rider Applications",
+    company: "Zoox",
+    location: "Foster City, CA",
+    url: "https://jobs.lever.co/zoox/97d4c889-56c1-4b43-bd3a-97060a698d3b",
+    department: "Experience Design",
   },
 
 ];

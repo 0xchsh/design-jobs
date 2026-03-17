@@ -69,7 +69,6 @@ const CAREERS_URLS: Record<string, string> = {
 
 const companies: CompanyConfig[] = [
   // Greenhouse
-  { company: "OpenAI", platform: "greenhouse", boardToken: "openaiboard" },
   { company: "Anthropic", platform: "greenhouse", boardToken: "anthropic" },
   { company: "Google DeepMind", platform: "greenhouse", boardToken: "deepmind" },
   { company: "Figma", platform: "greenhouse", boardToken: "figma" },
@@ -118,20 +117,10 @@ const companies: CompanyConfig[] = [
   { company: "Amplitude", platform: "greenhouse", boardToken: "amplitude" },
   { company: "Bloomreach", platform: "greenhouse", boardToken: "bloomreach" },
   { company: "Algolia", platform: "greenhouse", boardToken: "algolia" },
-  { company: "Zoox", platform: "greenhouse", boardToken: "zoox" },
+  { company: "Sourcegraph", platform: "greenhouse", boardToken: "sourcegraph91" },
   { company: "CoreWeave", platform: "greenhouse", boardToken: "coreweave" },
-  { company: "Hugging Face", platform: "greenhouse", boardToken: "hugging-face" },
-  { company: "Deepgram", platform: "greenhouse", boardToken: "deepgram" },
-  { company: "Sourcegraph", platform: "greenhouse", boardToken: "sourcegraph" },
-  { company: "Weights & Biases", platform: "greenhouse", boardToken: "wandb" },
-  { company: "Lambda", platform: "greenhouse", boardToken: "lambda" },
-  { company: "AI21 Labs", platform: "greenhouse", boardToken: "ai21" },
   { company: "Figure AI", platform: "greenhouse", boardToken: "figureai" },
-  { company: "Covariant", platform: "greenhouse", boardToken: "covariant" },
-  { company: "Codeium", platform: "greenhouse", boardToken: "codeium" },
-  { company: "Tabnine", platform: "greenhouse", boardToken: "tabnine" },
-  { company: "Quora", platform: "greenhouse", boardToken: "quora" },
-  { company: "Leonardo AI", platform: "greenhouse", boardToken: "leonardoai" },
+  { company: "You.com", platform: "greenhouse", boardToken: "youcom" },
   // Ashby
   { company: "Linear", platform: "ashby", orgSlug: "Linear" },
   { company: "Perplexity", platform: "ashby", orgSlug: "perplexity" },
@@ -159,10 +148,11 @@ const companies: CompanyConfig[] = [
   { company: "Netic", platform: "ashby", orgSlug: "netic" },
   { company: "Mercor", platform: "ashby", orgSlug: "mercor" },
   { company: "Cognition", platform: "ashby", orgSlug: "cognition" },
-  { company: "Luma AI", platform: "ashby", orgSlug: "lumalabs" },
+  { company: "OpenAI", platform: "ashby", orgSlug: "openai" },
+  { company: "Deepgram", platform: "ashby", orgSlug: "deepgram" },
+  { company: "Lambda", platform: "ashby", orgSlug: "lambda" },
+  { company: "Quora", platform: "ashby", orgSlug: "quora" },
   { company: "Krea", platform: "ashby", orgSlug: "krea" },
-  { company: "Skild AI", platform: "ashby", orgSlug: "skild" },
-  { company: "You.com", platform: "ashby", orgSlug: "you" },
   { company: "Tavus", platform: "ashby", orgSlug: "tavus" },
   { company: "Synthflow", platform: "ashby", orgSlug: "synthflow" },
   { company: "Braintrust", platform: "ashby", orgSlug: "braintrust" },
@@ -186,6 +176,7 @@ const companies: CompanyConfig[] = [
   { company: "Palantir", platform: "lever", orgSlug: "palantir" },
   { company: "Spotify", platform: "lever", orgSlug: "spotify" },
   { company: "Plaid", platform: "lever", orgSlug: "plaid" },
+  { company: "Zoox", platform: "lever", orgSlug: "zoox" },
   // Custom (URL liveness check only — can't auto-discover new jobs)
   { company: "Cursor", platform: "custom", existingJobs: true },
 ];
