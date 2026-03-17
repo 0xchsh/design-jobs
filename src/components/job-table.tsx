@@ -182,8 +182,6 @@ const domainMap: Record<string, string> = {
   "Sigma Computing": "sigmacomputing.com",
   Sprig: "sprig.com",
   Rogo: "rogo.ai",
-  "asari.ai": "asari.ai",
-  brandlight: "brandlight.co",
   e2b: "e2b.dev",
   launchdarkly: "launchdarkly.com",
   skydio: "skydio.com",

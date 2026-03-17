@@ -677,16 +677,6 @@ export const jobs: Job[] = [
     postedAt: "2025-10-21T14:29:40.930+00:00",
   },
 
-  // ── education ──────────────────────────────────────────────
-  {
-    title: "Staff Brand Experience Designer",
-    company: "education",
-    location: "Redwood City, CA (Hybrid)",
-    url: "https://job-boards.greenhouse.io/education/jobs/7476957",
-    department: "",
-    postedAt: "2026-01-15T19:08:05-05:00",
-  },
-
   // ── Elastic ────────────────────────────────────────────────
   {
     title: "Visual Designer, Social",
@@ -1271,56 +1261,6 @@ export const jobs: Job[] = [
     postedAt: "2026-01-19T04:59:47.522+00:00",
   },
 
-  // ── Instacart ──────────────────────────────────────────────
-  {
-    title: "Product Designer II - Consumer",
-    company: "Instacart",
-    location: "United States - Remote",
-    url: "https://instacart.careers/job/?gh_jid=7611197",
-    department: "",
-    postedAt: "2026-02-12T12:59:36-05:00",
-  },
-  {
-    title: "Senior Design Program Manager II",
-    company: "Instacart",
-    location: "United States - Remote",
-    url: "https://instacart.careers/job/?gh_jid=7684391",
-    department: "",
-    postedAt: "2026-03-05T15:25:51-05:00",
-  },
-  {
-    title: "Senior Product Designer - Lifecycle & Growth",
-    company: "Instacart",
-    location: "United States - Remote",
-    url: "https://instacart.careers/job/?gh_jid=7688227",
-    department: "",
-    postedAt: "2026-03-06T13:05:27-05:00",
-  },
-  {
-    title: "Senior Product Designer II - Design Systems",
-    company: "Instacart",
-    location: "United States - Remote",
-    url: "https://instacart.careers/job/?gh_jid=7695984",
-    department: "",
-    postedAt: "2026-03-09T13:24:56-04:00",
-  },
-  {
-    title: "Staff Experience Designer - Meals and Health",
-    company: "Instacart",
-    location: "United States - Remote",
-    url: "https://instacart.careers/job/?gh_jid=7652233",
-    department: "",
-    postedAt: "2026-02-25T12:20:31-05:00",
-  },
-  {
-    title: "Staff Product Design - Lifecycle and Growth",
-    company: "Instacart",
-    location: "United States - Remote",
-    url: "https://instacart.careers/job/?gh_jid=7627311",
-    department: "",
-    postedAt: "2026-02-18T15:24:22-05:00",
-  },
-
   // ── Intercom ───────────────────────────────────────────────
   {
     title: "Senior Motion Designer",
@@ -1631,40 +1571,6 @@ export const jobs: Job[] = [
     url: "https://jobs.ashbyhq.com/noise-labs/cf251165-a1a3-4386-930b-ce5879a073bd",
     department: "Design",
     postedAt: "2026-01-23T19:01:55.348+00:00",
-  },
-
-  // ── Nubank ─────────────────────────────────────────────────
-  {
-    title: "Design Director",
-    company: "Nubank",
-    location: "USA, Miami",
-    url: "https://job-boards.greenhouse.io/nubank/jobs/7176546",
-    department: "",
-    postedAt: "2025-10-02T09:49:24-04:00",
-  },
-  {
-    title: "Senior Design Manager — AI Private Banker",
-    company: "Nubank",
-    location: "USA, Palo Alto",
-    url: "https://job-boards.greenhouse.io/nubank/jobs/7356697",
-    department: "",
-    postedAt: "2025-11-06T07:33:21-05:00",
-  },
-  {
-    title: "Staff Product Designer ",
-    company: "Nubank",
-    location: "USA - Remote",
-    url: "https://job-boards.greenhouse.io/nubank/jobs/6782584",
-    department: "",
-    postedAt: "2025-07-22T20:22:42-04:00",
-  },
-  {
-    title: "Technical Lead Product Designer - AI Private Banker",
-    company: "Nubank",
-    location: "USA, Durham; USA, Miami; USA, Palo Alto",
-    url: "https://job-boards.greenhouse.io/nubank/jobs/7383059",
-    department: "",
-    postedAt: "2025-11-07T08:01:16-05:00",
   },
 
   // ── OpenAI ─────────────────────────────────────────────────
@@ -2005,16 +1911,6 @@ export const jobs: Job[] = [
     postedAt: "2026-02-25T18:18:51-05:00",
   },
 
-  // ── redpine ────────────────────────────────────────────────
-  {
-    title: "Design Lead",
-    company: "redpine",
-    location: "Redpine HQ, central Stockholm",
-    url: "https://jobs.ashbyhq.com/redpine/1ce4da85-256c-4ecc-86c8-005183211117",
-    department: "Tech",
-    postedAt: "2026-01-08T11:14:30.088+00:00",
-  },
-
   // ── Replit ─────────────────────────────────────────────────
   {
     title: "Brand Design Lead",
@@ -2067,24 +1963,6 @@ export const jobs: Job[] = [
     postedAt: "2026-03-04T19:01:43.726+00:00",
   },
 
-  // ── revenuecat ─────────────────────────────────────────────
-  {
-    title: "Brand Design Lead",
-    company: "revenuecat",
-    location: "Americas",
-    url: "https://jobs.ashbyhq.com/revenuecat/58445811-a838-4f83-99f4-507d0ddaf577",
-    department: "Growth",
-    postedAt: "2026-02-19T02:43:05.157+00:00",
-  },
-  {
-    title: "Senior Product Designer",
-    company: "revenuecat",
-    location: "Americas",
-    url: "https://jobs.ashbyhq.com/revenuecat/c3fe34a4-dc40-4ac5-b707-7d99eaf13fc4",
-    department: "Design",
-    postedAt: "2026-01-13T15:53:54.824+00:00",
-  },
-
   // ── Robinhood ──────────────────────────────────────────────
   {
     title: "Product Designer, Growth",
@@ -2135,6 +2013,32 @@ export const jobs: Job[] = [
     url: "https://jobs.ashbyhq.com/roboflow/0acaa172-53de-4792-9d80-e87cc6f20539",
     department: "Marketing",
     postedAt: "2025-11-21T13:49:13.791+00:00",
+  },
+
+  // ── Rogo ───────────────────────────────────────────────────
+  {
+    title: "Brand Designer ",
+    company: "Rogo",
+    location: "New York City",
+    url: "https://jobs.ashbyhq.com/Rogo/e7f8cd1c-6dad-433a-b3fe-0b59a8d3a4f5",
+    department: "Product",
+    postedAt: "2025-10-30T17:20:46.606+00:00",
+  },
+  {
+    title: "Design Engineer",
+    company: "Rogo",
+    location: "New York City",
+    url: "https://jobs.ashbyhq.com/Rogo/83b7c477-ffce-4a64-b68a-43772aeeadef",
+    department: "Product",
+    postedAt: "2025-10-30T17:38:24.375+00:00",
+  },
+  {
+    title: "Product Designer ",
+    company: "Rogo",
+    location: "New York City",
+    url: "https://jobs.ashbyhq.com/Rogo/0fde5cb5-3c42-4395-b9f6-8912080d533a",
+    department: "Product",
+    postedAt: "2024-07-17T19:25:16.003+00:00",
   },
 
   // ── Runway ─────────────────────────────────────────────────
@@ -2307,40 +2211,6 @@ export const jobs: Job[] = [
     postedAt: "2025-12-04T23:32:17.053+00:00",
   },
 
-  // ── Spotify ────────────────────────────────────────────────
-  {
-    title: "Content Designer, Personalization",
-    company: "Spotify",
-    location: "New York, NY",
-    url: "https://jobs.lever.co/spotify/6ea8d335-e16c-4eac-ac2c-0f4fe02f4b17",
-    department: "Personalization",
-    postedAt: "2026-02-12T21:53:15.323Z",
-  },
-  {
-    title: "Product Designer - Advertising",
-    company: "Spotify",
-    location: "New York, NY",
-    url: "https://jobs.lever.co/spotify/a6bee751-d090-4f8d-92f6-ae1550bcfe02",
-    department: "Advertising R&D",
-    postedAt: "2026-03-10T13:58:44.843Z",
-  },
-  {
-    title: "Senior Product Designer - Core Experience (Format Foundations)",
-    company: "Spotify",
-    location: "New York, NY",
-    url: "https://jobs.lever.co/spotify/41b59051-6121-4ae8-bac5-07775bbc529a",
-    department: "Experience",
-    postedAt: "2026-03-11T10:38:35.097Z",
-  },
-  {
-    title: "Senior Project Manager - WorkplaceX Design & Build",
-    company: "Spotify",
-    location: "Stockholm",
-    url: "https://jobs.lever.co/spotify/6adc685d-fe37-46bc-a221-5fd4552f2278",
-    department: "Global Workplace Services",
-    postedAt: "2026-02-26T15:55:27.869Z",
-  },
-
   // ── Sprig ──────────────────────────────────────────────────
   {
     title: "Senior Product Designer, AI",
@@ -2493,16 +2363,6 @@ export const jobs: Job[] = [
     url: "https://jobs.ashbyhq.com/twelve-labs/5b54caff-ce8f-4d63-93cc-c4931216e55f",
     department: "Product & Design",
     postedAt: "2026-03-12T21:42:39.401+00:00",
-  },
-
-  // ── Twitch ─────────────────────────────────────────────────
-  {
-    title: "UX Designer, Monetization",
-    company: "Twitch",
-    location: "New York City | San Francisco, CA | Seattle, WA | Irvine, CA",
-    url: "https://job-boards.greenhouse.io/twitch/jobs/8458010002",
-    department: "",
-    postedAt: "2026-03-10T19:01:31-04:00",
   },
 
   // ── Typeface ───────────────────────────────────────────────
