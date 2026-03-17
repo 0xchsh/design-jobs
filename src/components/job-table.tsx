@@ -163,7 +163,6 @@ const domainMap: Record<string, string> = {
   Datadog: "datadoghq.com",
   Elastic: "elastic.co",
   Twilio: "twilio.com",
-  Dropbox: "dropbox.com",
   Typeform: "typeform.com",
   Bolt: "bolt.new",
   Klaviyo: "klaviyo.com",
