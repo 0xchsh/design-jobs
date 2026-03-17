@@ -140,7 +140,6 @@ const domainMap: Record<string, string> = {
   Doji: "doji.art",
   Navattic: "navattic.com",
   Cognition: "cognition.ai",
-  "Augment Code": "augmentcode.com",
   "Physical Intelligence": "physicalintelligence.ai",
   Letta: "letta.ai",
   LangChain: "langchain.com",
@@ -189,7 +188,6 @@ const domainMap: Record<string, string> = {
   Browserbase: "browserbase.com",
   Mintlify: "mintlify.com",
   Pylon: "usepylon.com",
-  Sprig: "sprig.com",
 };
 
 function CompanyIcon({ company }: { company: string }) {
