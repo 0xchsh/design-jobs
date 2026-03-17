@@ -12,7 +12,7 @@ export default function Home() {
         <AsciiBg />
         <div className="relative mx-auto max-w-[1200px] px-6 pointer-events-none">
           <div className="max-w-2xl pointer-events-auto">
-          <h1 className="text-[64px] font-medium tracking-[-0.02em] leading-[1.1] text-foreground font-serif">
+          <h1 className="text-[40px] sm:text-[64px] font-medium tracking-[-0.02em] leading-[1.1] text-foreground font-serif">
             Curated design roles
             <br />
             at AI companies

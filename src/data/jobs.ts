@@ -349,6 +349,15 @@ export const jobs: Job[] = [
     department: "Product",
   },
 
+  // ── CoreWeave ──────────────────────────────────────────────
+  {
+    title: "Sustainable Data Center Design Manager",
+    company: "CoreWeave",
+    location: "Livingston, NJ / New York, NY / Sunnyvale, CA / San Francisco, CA / Bellevue, WA / Richmond, VA",
+    url: "https://coreweave.com/careers/job?4661968006&board=coreweave&gh_jid=4661968006",
+    department: "Data Center - G&A",
+  },
+
   // ── Cresta ─────────────────────────────────────────────────
   {
     title: "Conversational Designer",
@@ -450,115 +459,6 @@ export const jobs: Job[] = [
     department: "Product Design",
   },
 
-  // ── Dropbox ────────────────────────────────────────────────
-  {
-    title: "Content Design Intern (Summer 2026)",
-    company: "Dropbox",
-    location: "Remote - US: All locations | Remote - Canada: Select locations",
-    url: "https://jobs.dropbox.com/listing/7558609?gh_jid=7558609",
-    department: "Dash - Design (Sub Team)",
-  },
-  {
-    title: "CX Technical Content Design Intern (Summer 2026)",
-    company: "Dropbox",
-    location: "Remote - US: All locations | Remote - Canada: Select locations",
-    url: "https://jobs.dropbox.com/listing/7558512?gh_jid=7558512",
-    department: "CX Global Support (Sub Team)",
-  },
-  {
-    title: "CX Video Content Design Intern (Summer 2026)",
-    company: "Dropbox",
-    location: "Remote - US: All locations | Remote - Canada: Select locations",
-    url: "https://jobs.dropbox.com/listing/7532161?gh_jid=7532161",
-    department: "CX Global Support (Sub Team)",
-  },
-  {
-    title: "Product Designer",
-    company: "Dropbox",
-    location: "Remote - Poland",
-    url: "https://jobs.dropbox.com/listing/7608901?gh_jid=7608901",
-    department: "Design - Growth (Sub Team)",
-  },
-  {
-    title: "Senior Content Designer",
-    company: "Dropbox",
-    location: "Remote - US: Select locations | Remote - Canada: Select locations",
-    url: "https://jobs.dropbox.com/listing/7712835?gh_jid=7712835",
-    department: "Design - Teams and Collab (Sub Team)",
-  },
-  {
-    title: "Senior Manager, Product Design",
-    company: "Dropbox",
-    location: "Remote - US: All locations",
-    url: "https://jobs.dropbox.com/listing/6874591?gh_jid=6874591",
-    department: "Design - Core Experience (Sub Team)",
-  },
-  {
-    title: "Senior Manager, Product Design ",
-    company: "Dropbox",
-    location: "Remote - Canada: Select locations",
-    url: "https://jobs.dropbox.com/listing/6874596?gh_jid=6874596",
-    department: "Design - Core Experience (Sub Team)",
-  },
-  {
-    title: "Staff Product Designer",
-    company: "Dropbox",
-    location: "Remote - US: Select locations | Remote - Canada: Select locations",
-    url: "https://jobs.dropbox.com/listing/7558673?gh_jid=7558673",
-    department: "Design - Teams and Collab (Sub Team)",
-  },
-  {
-    title: "Staff Product Designer, Mobile Design Systems",
-    company: "Dropbox",
-    location: "Remote - US: Select locations | Remote - Canada: Select locations",
-    url: "https://jobs.dropbox.com/listing/7274137?gh_jid=7274137",
-    department: "Design Systems (Sub Team)",
-  },
-  {
-    title: "Staff Product Designer, New Initiatives",
-    company: "Dropbox",
-    location: "Remote - US: All locations | Remote - Canada: Select locations",
-    url: "https://jobs.dropbox.com/listing/7416008?gh_jid=7416008",
-    department: "New Initiatives Pods (Sub Team)",
-  },
-
-  // ── Duolingo ───────────────────────────────────────────────
-  {
-    title: "Director of Learning Design, Language Learning",
-    company: "Duolingo",
-    location: "Pittsburgh, PA",
-    url: "https://careers.duolingo.com/jobs/8236638002?gh_jid=8236638002",
-    department: "Learning and Curriculum ",
-  },
-  {
-    title: "Director of Product Design",
-    company: "Duolingo",
-    location: "Pittsburgh, PA | New York, NY",
-    url: "https://careers.duolingo.com/jobs/8398180002?gh_jid=8398180002",
-    department: "Product Design",
-  },
-  {
-    title: "Senior Product Design Manager",
-    company: "Duolingo",
-    location: "New York, NY | Pittsburgh, PA",
-    url: "https://careers.duolingo.com/jobs/8385193002?gh_jid=8385193002",
-    department: "Design",
-  },
-  {
-    title: "Senior Product Designer",
-    company: "Duolingo",
-    location: "London, England",
-    url: "https://careers.duolingo.com/jobs/8402493002?gh_jid=8402493002",
-    department: "Design",
-  },
-  {
-    title: "Staff Product Designer",
-    company: "Duolingo",
-    location: "Pittsburgh, PA | New York, NY",
-    url: "https://careers.duolingo.com/jobs/8200009002?gh_jid=8200009002",
-    department: "Product Design",
-  },
-
   // ── ElevenLabs ─────────────────────────────────────────────
   {
     title: "Design Engineer",
@@ -654,6 +554,15 @@ export const jobs: Job[] = [
     location: "San Francisco, CA • New York, NY • United States",
     url: "https://boards.greenhouse.io/figma/jobs/5711595004?gh_jid=5711595004",
     department: "Design",
+  },
+
+  // ── Figure AI ──────────────────────────────────────────────
+  {
+    title: "Sr Mechanical Engineer, Fan and Duct Design",
+    company: "Figure AI",
+    location: "San Jose, CA",
+    url: "https://job-boards.greenhouse.io/figureai/jobs/4627385006",
+    department: "Hardware",
   },
 
   // ── Fivetran ───────────────────────────────────────────────
@@ -1088,6 +997,15 @@ export const jobs: Job[] = [
     location: "Berlin, Germany; Dublin, Ireland; London, England",
     url: "https://job-boards.greenhouse.io/intercom/jobs/6706842",
     department: "Product Design",
+  },
+
+  // ── Krea ───────────────────────────────────────────────────
+  {
+    title: "Product Designer",
+    company: "Krea",
+    location: "San Francisco",
+    url: "https://jobs.ashbyhq.com/krea/658fb41c-6cf8-49c7-bcd6-e68e0cc2a217",
+    department: "Product",
   },
 
   // ── Lattice ────────────────────────────────────────────────
