@@ -1175,6 +1175,16 @@ export const jobs: Job[] = [
     postedAt: "2026-01-24T17:26:05.773+00:00",
   },
 
+  // ── Late Checkout ──────────────────────────────────────────
+  {
+    title: "Sr. Product Designer",
+    company: "Late Checkout",
+    location: "Remote",
+    url: "https://www.latecheckout.agency/careers/sr-product-designer-full-time",
+    department: "Design",
+    postedAt: "2026-03-17T00:00:00.000Z",
+  },
+
   // ── Lattice ────────────────────────────────────────────────
   {
     title: "Staff Product Designer, Core UI",

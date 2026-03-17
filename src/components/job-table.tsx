@@ -97,6 +97,7 @@ const domainMap: Record<string, string> = {
   Fivetran: "fivetran.com",
   Moveworks: "moveworks.com",
   Braze: "braze.com",
+  "Late Checkout": "latecheckout.agency",
   Lattice: "lattice.com",
   Amplitude: "amplitude.com",
   Bloomreach: "bloomreach.com",
