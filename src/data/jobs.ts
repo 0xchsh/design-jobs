@@ -635,6 +635,40 @@ export const jobs: Job[] = [
     postedAt: "2026-01-28T00:07:22.208+00:00",
   },
 
+  // ── Duolingo ───────────────────────────────────────────────
+  {
+    title: "Director of Learning Design, Language Learning",
+    company: "Duolingo",
+    location: "Pittsburgh, PA",
+    url: "https://careers.duolingo.com/jobs/8236638002?gh_jid=8236638002",
+    department: "",
+    postedAt: "2025-10-31T10:57:40-04:00",
+  },
+  {
+    title: "Director of Product Design",
+    company: "Duolingo",
+    location: "Pittsburgh, PA | New York, NY",
+    url: "https://careers.duolingo.com/jobs/8398180002?gh_jid=8398180002",
+    department: "",
+    postedAt: "2026-01-30T09:43:56-05:00",
+  },
+  {
+    title: "Senior Product Design Manager",
+    company: "Duolingo",
+    location: "Pittsburgh, PA | New York, NY",
+    url: "https://careers.duolingo.com/jobs/8385195002?gh_jid=8385195002",
+    department: "",
+    postedAt: "2026-01-21T20:53:46-05:00",
+  },
+  {
+    title: "Staff Product Designer",
+    company: "Duolingo",
+    location: "Pittsburgh, PA | New York, NY",
+    url: "https://careers.duolingo.com/jobs/8200009002?gh_jid=8200009002",
+    department: "",
+    postedAt: "2025-10-06T20:17:41-04:00",
+  },
+
   // ── Elastic ────────────────────────────────────────────────
   {
     title: "Visual Designer, Social",

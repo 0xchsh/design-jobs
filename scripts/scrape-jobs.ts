@@ -165,6 +165,8 @@ const companies: CompanyConfig[] = [
   { company: "Pendo", platform: "greenhouse", boardToken: "pendo" },
   { company: "Affirm", platform: "greenhouse", boardToken: "affirm" },
   { company: "Sigma Computing", platform: "greenhouse", boardToken: "sigmacomputing" },
+  { company: "Duolingo", platform: "greenhouse", boardToken: "duolingo" },
+  { company: "Miro", platform: "greenhouse", boardToken: "realtimeboardglobal" },
   // Ashby
   { company: "Linear", platform: "ashby", orgSlug: "Linear" },
   { company: "Perplexity", platform: "ashby", orgSlug: "perplexity" },
