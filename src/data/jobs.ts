@@ -205,10 +205,10 @@ export const jobs: Job[] = [
   {
     title: "Senior Product Designer",
     company: "Bloomreach",
-    location: "Slovakia | Czechia",
-    url: "https://job-boards.greenhouse.io/bloomreach/jobs/7649079",
+    location: "Czechia | Slovakia",
+    url: "https://job-boards.greenhouse.io/bloomreach/jobs/7649080",
     department: "",
-    postedAt: "2026-02-24T03:28:56-05:00",
+    postedAt: "2026-02-24T03:28:55-05:00",
   },
 
   // ── Bolt ───────────────────────────────────────────────────
@@ -239,14 +239,32 @@ export const jobs: Job[] = [
     postedAt: "2024-10-09T20:55:56.052+00:00",
   },
 
+  // ── brandlight ─────────────────────────────────────────────
+  {
+    title: "Brand Designer ",
+    company: "brandlight",
+    location: "TLV",
+    url: "https://jobs.ashbyhq.com/brandlight/5fc6f583-3e6b-4aef-a713-4bc073d4c393",
+    department: "Marketing",
+    postedAt: "2026-02-10T19:56:18.443+00:00",
+  },
+  {
+    title: "Senior Product Designer",
+    company: "brandlight",
+    location: "TLV",
+    url: "https://jobs.ashbyhq.com/brandlight/ec088723-ed99-4ff7-9d72-30da13bbf627",
+    department: "Product Design",
+    postedAt: "2026-03-19T15:41:30.561+00:00",
+  },
+
   // ── Braze ──────────────────────────────────────────────────
   {
     title: "Lead Design Engineer",
     company: "Braze",
-    location: "Austin | New York City | Chicago | San Francisco",
-    url: "https://boards.greenhouse.io/braze/jobs/7614563?gh_jid=7614563",
+    location: "New York City | Austin | San Francisco | Chicago",
+    url: "https://boards.greenhouse.io/braze/jobs/7592334?gh_jid=7592334",
     department: "",
-    postedAt: "2026-02-13T10:32:48-05:00",
+    postedAt: "2026-02-13T10:32:47-05:00",
   },
 
   // ── Brex ───────────────────────────────────────────────────
@@ -551,10 +569,10 @@ export const jobs: Job[] = [
   {
     title: "Sr. Product Designer, AI/BI",
     company: "Databricks",
-    location: "Seattle, Washington | Mountain View, California; San Francisco, California",
-    url: "https://databricks.com/company/careers/open-positions/job?gh_jid=8428820002",
+    location: "Mountain View, California; San Francisco, California | Seattle, Washington",
+    url: "https://databricks.com/company/careers/open-positions/job?gh_jid=8429978002",
     department: "",
-    postedAt: "2026-02-19T13:08:36-05:00",
+    postedAt: "2026-02-19T13:08:38-05:00",
   },
   {
     title: "Sr. Product Designer, Data Engineering",
@@ -667,6 +685,16 @@ export const jobs: Job[] = [
     url: "https://careers.duolingo.com/jobs/8200009002?gh_jid=8200009002",
     department: "",
     postedAt: "2025-10-06T20:17:41-04:00",
+  },
+
+  // ── e2b ────────────────────────────────────────────────────
+  {
+    title: "Brand Designer",
+    company: "e2b",
+    location: "San Francisco",
+    url: "https://jobs.ashbyhq.com/e2b/1ad2b187-6111-464f-97c3-81cac8771c01",
+    department: "Design",
+    postedAt: "2025-10-21T14:29:40.930+00:00",
   },
 
   // ── Elastic ────────────────────────────────────────────────
@@ -1141,6 +1169,32 @@ export const jobs: Job[] = [
     postedAt: "2025-12-07T23:03:28-05:00",
   },
 
+  // ── Hightouch ──────────────────────────────────────────────
+  {
+    title: "Brand Designer",
+    company: "Hightouch",
+    location: "Remote (North America)",
+    url: "https://job-boards.greenhouse.io/hightouch/jobs/5823458004",
+    department: "",
+    postedAt: "2026-03-10T16:26:31-04:00",
+  },
+  {
+    title: "Senior Interactive Brand Designer",
+    company: "Hightouch",
+    location: "Remote (North America)",
+    url: "https://job-boards.greenhouse.io/hightouch/jobs/5823299004",
+    department: "",
+    postedAt: "2026-03-10T15:19:00-04:00",
+  },
+  {
+    title: "Senior Product Designer, Agents",
+    company: "Hightouch",
+    location: "Remote (North America)",
+    url: "https://job-boards.greenhouse.io/hightouch/jobs/5733315004",
+    department: "",
+    postedAt: "2026-02-05T11:18:24-05:00",
+  },
+
   // ── HubSpot ────────────────────────────────────────────────
   {
     title: "Senior Product Designer I, Agent Platform",
@@ -1267,6 +1321,16 @@ export const jobs: Job[] = [
     postedAt: "2026-02-01T22:08:58.716+00:00",
   },
 
+  // ── launchdarkly ───────────────────────────────────────────
+  {
+    title: "Senior Product Designer, AI Configs",
+    company: "launchdarkly",
+    location: "Remote - US",
+    url: "https://job-boards.greenhouse.io/launchdarkly/jobs/7629005003",
+    department: "",
+    postedAt: "2026-02-11T17:16:28-05:00",
+  },
+
   // ── Lindy ──────────────────────────────────────────────────
   {
     title: "Senior Product Designer",
@@ -1355,6 +1419,24 @@ export const jobs: Job[] = [
     postedAt: "2025-11-17T21:13:18.880+00:00",
   },
 
+  // ── Lucid Software ─────────────────────────────────────────
+  {
+    title: "UX Design Internship 2026 ",
+    company: "Lucid Software",
+    location: "Salt Lake City, UT | Raleigh, NC",
+    url: "https://job-boards.greenhouse.io/lucidsoftware/jobs/5632618004",
+    department: "",
+    postedAt: "2026-02-23T16:57:10-05:00",
+  },
+  {
+    title: "UX Designer",
+    company: "Lucid Software",
+    location: "Salt Lake City, UT | Raleigh, NC",
+    url: "https://job-boards.greenhouse.io/lucidsoftware/jobs/5812414004",
+    department: "",
+    postedAt: "2026-03-02T18:30:47-05:00",
+  },
+
   // ── Lyft ───────────────────────────────────────────────────
   {
     title: "Product Designer - Rider Partnerships, Loyalty & Rider Pay",
@@ -1371,6 +1453,16 @@ export const jobs: Job[] = [
     url: "https://app.careerpuck.com/job-board/lyft/job/8357826002?gh_jid=8357826002",
     department: "",
     postedAt: "2026-01-14T17:37:14-05:00",
+  },
+
+  // ── mento ──────────────────────────────────────────────────
+  {
+    title: "Product Design Coach (VP+)",
+    company: "mento",
+    location: "Remote",
+    url: "https://job-boards.greenhouse.io/mento/jobs/4506662005",
+    department: "",
+    postedAt: "2024-12-09T11:51:19-05:00",
   },
 
   // ── Mercury ────────────────────────────────────────────────
@@ -1409,6 +1501,24 @@ export const jobs: Job[] = [
     url: "https://www.moveworks.com/us/en/company/careers/position?gh_jid=7604915002&gh_jid=7604915002",
     department: "",
     postedAt: "2024-08-26T22:42:01-04:00",
+  },
+
+  // ── Nebius ─────────────────────────────────────────────────
+  {
+    title: "Data Center Design Lead",
+    company: "Nebius",
+    location: "Remote - United States",
+    url: "https://careers.nebius.com/?gh_jid=4774875101",
+    department: "",
+    postedAt: "2026-02-05T14:29:47-05:00",
+  },
+  {
+    title: "Structured Cable Design Engineer",
+    company: "Nebius",
+    location: "Remote - United States",
+    url: "https://careers.nebius.com/?gh_jid=4752767101",
+    department: "",
+    postedAt: "2026-02-04T15:12:40-05:00",
   },
 
   // ── Netic ──────────────────────────────────────────────────
@@ -1847,6 +1957,44 @@ export const jobs: Job[] = [
     postedAt: "2026-03-04T19:01:43.726+00:00",
   },
 
+  // ── Revel ──────────────────────────────────────────────────
+  {
+    title: "Product Designer",
+    company: "Revel",
+    location: "Los Angeles",
+    url: "https://jobs.lever.co/revel/cae2b56a-8535-458d-931d-243887ed068e",
+    department: "Product",
+    postedAt: "2026-01-22T23:39:37.603Z",
+  },
+
+  // ── revenuecat ─────────────────────────────────────────────
+  {
+    title: "Brand Design Lead",
+    company: "revenuecat",
+    location: "Americas",
+    url: "https://jobs.ashbyhq.com/revenuecat/58445811-a838-4f83-99f4-507d0ddaf577",
+    department: "Growth",
+    postedAt: "2026-02-19T02:43:05.157+00:00",
+  },
+  {
+    title: "Senior Product Designer",
+    company: "revenuecat",
+    location: "Americas",
+    url: "https://jobs.ashbyhq.com/revenuecat/c3fe34a4-dc40-4ac5-b707-7d99eaf13fc4",
+    department: "Design",
+    postedAt: "2026-01-13T15:53:54.824+00:00",
+  },
+
+  // ── Rhombus Power, Inc. ────────────────────────────────────
+  {
+    title: "UI/UX Designer, Palo Alto",
+    company: "Rhombus Power, Inc.",
+    location: "Palo Alto, California, United States",
+    url: "https://job-boards.greenhouse.io/rhombuspower/jobs/7659142003",
+    department: "",
+    postedAt: "2026-03-09T17:32:11-04:00",
+  },
+
   // ── Robinhood ──────────────────────────────────────────────
   {
     title: "Product Designer, Growth",
@@ -2063,6 +2211,24 @@ export const jobs: Job[] = [
     postedAt: "2026-03-16T16:46:43-04:00",
   },
 
+  // ── standardbots ───────────────────────────────────────────
+  {
+    title: "Brand Design Lead",
+    company: "standardbots",
+    location: "New York City, NY",
+    url: "https://jobs.ashbyhq.com/standardbots/b0af098d-448d-4daa-b189-3690920d400e",
+    department: "Marketing ",
+    postedAt: "2026-02-20T20:01:18.253+00:00",
+  },
+  {
+    title: "Product Designer",
+    company: "standardbots",
+    location: "New York City, NY",
+    url: "https://jobs.ashbyhq.com/standardbots/22c1c1af-7aec-4cb9-9f60-51638bbecc49",
+    department: "Product",
+    postedAt: "2026-02-06T17:44:23.561+00:00",
+  },
+
   // ── Stripe ─────────────────────────────────────────────────
   {
     title: "Brand Designer, Art Direction",
@@ -2151,6 +2317,24 @@ export const jobs: Job[] = [
     url: "https://job-boards.greenhouse.io/togetherai/jobs/5074088007",
     department: "",
     postedAt: "2026-03-11T21:14:47-04:00",
+  },
+
+  // ── Triple Whale ───────────────────────────────────────────
+  {
+    title: "Senior Product Designer",
+    company: "Triple Whale",
+    location: "Remote US",
+    url: "https://job-boards.greenhouse.io/triplewhale/jobs/5084427008",
+    department: "",
+    postedAt: "2026-01-23T14:47:39-05:00",
+  },
+  {
+    title: "Visual Designer",
+    company: "Triple Whale",
+    location: "Remote- US ",
+    url: "https://job-boards.greenhouse.io/triplewhale/jobs/5098108008",
+    department: "",
+    postedAt: "2026-02-11T12:31:40-05:00",
   },
 
   // ── Twelve Labs ────────────────────────────────────────────
